@@ -1,4 +1,6 @@
 # KevinDHeath.github.io
 My GitHub Pages
 
-<a href="https://KevinDHeath.github.io/dot-net-colors.htm">Predefined colors chart</a>
+- [Predefined .NET colors chart](./coding/dot-net-colors.html)
+
+<a href="https://KevinDHeath.github.io/coding/dot-net-colors.html">Predefined colors chart</a>
