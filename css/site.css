@@ -1,0 +1,31 @@
+﻿body {
+	background-color: black;
+	color: white;
+	font: 12pt Verdana, Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #8ab4f8;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a:visited {
+		color: #c58af9;
+	}
+
+td {
+	vertical-align: top;
+}
+
+	td.profile {
+		padding-right: 40px;
+	}
+
+	td.updated {
+		font-size: 9pt;
+		width: 100%;
+	}
