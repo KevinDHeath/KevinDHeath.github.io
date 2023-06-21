@@ -1,0 +1,5 @@
+document.write("<table border='0' cellpadding='0' cellspacing='0' width='95%'>")
+document.write("  <tr>")
+document.write("    <td width='100%' class='DividerB'><font size='1'>&nbsp;</font></td>")
+document.write("  </tr>")
+document.write("</table>")
