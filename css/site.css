@@ -17,11 +17,6 @@ a {
 		color: #c58af9;
 	}
 
-a.nocolor {
-	color: none;
-	text-decoration: none;
-}
-
 td {
 	vertical-align: top;
 }
