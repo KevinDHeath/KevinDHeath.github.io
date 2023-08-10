@@ -27,5 +27,6 @@ td {
 
 	td.updated {
 		font-size: 9pt;
+		font-style: italic;
 		width: 100%;
 	}
