@@ -13,6 +13,6 @@ function fnWriteLastUpdated() {
 
 function fnFormatLastUpdated() {
 	var updDate = new Date(document.lastModified);
-	var datestring = updDate.getMonthName() + " " + updDate.getDate() + ", " + updDate.getFullYear();
-	return datestring;
+	var dateString = updDate.getMonthName() + " " + updDate.getDate() + ", " + updDate.getFullYear();
+	return dateString;
 }

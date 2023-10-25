@@ -1,37 +1,49 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Kevin D. Heath</title>
-    <link rel="stylesheet" href="css/site.css" type="text/css" />
-    <script src="js/site.js"></script>
-    <base target="_blank">
+  <meta charset="utf-8" />
+  <title>Kevin D. Heath</title>
+  <link rel="stylesheet" href="css/site.css" type="text/css" />
+  <script src="js/site.js"></script>
+  <base target="_blank">
 </head>
+
 <body>
+  <table>
+    <tr>
+      <td class="profile" rowspan="2"><a href="./mainsite/index.html" target="_self">
+          <img src="img/KHeath_small.jpg" width="91" height="84" /></a></td>
+      <td class="updated">Last updated:
+        <script type="text/javascript">fnWriteLastUpdated()</script>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h2 style="margin-top: 0pt;">Welcome to my GitHub Pages</h2>
+        <p>
+          This site provides information about my favorite hobby, coding in C#!<br />
+          This is my first attempt so hopefully a lot more content will be added soon.
+        </p>
+      </td>
+    </tr>
+  </table>
 
-    <table>
-        <tr>
-            <td class="profile" rowspan="2"><a href="./mainsite/index.html" target="_self"><img src="img/KHeath_small.jpg" width="91" height="84"/></a></td>
-            <td align="right" class="updated">Last updated:
-                <script type="text/javascript">fnWriteLastUpdated()</script>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2 style="margin-top: 0pt;">Welcome to my GitHub Pages</h2>
-                <p>
-                    This site provides information about my favorite hobby, coding in C#!<br />
-                    This is my first attempt so hopefully a lot more content will be added soon.
-                </p>
-            </td>
-        </tr>
-    </table>
-
-    <ul>
-        <li><a href="https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-and-net-core">Microsoft .NET and .NET Core Life-cycle</a></li>
-        <li><a href="./tech/mvvm-wpf-refs.html">MVVM WPF Test Application References</a></li>
-        <li><a href="./tech/dot-net-colors.html">Predefined Windows Desktop Colors chart</a></li>
+  <div id="toc_container">
+    <p class="toc_title">Contents</p>
+    <ul class="toc_list">
+      <li><a href="#item-one" target="_self">General</a></li>
+      <li><a href="./tech/mvvm-wpf-refs.html">MVVM WPF Test Application References</a></li>
+      <li><a href="#Third_Point_Header" target="_self">Third Point Header</a></li>
     </ul>
+  </div>
+
+  <h3 id="item-one">General</h3>
+  <ul>
+    <li><a href="./tech/dot-net-colors.html">Predefined Windows Desktop Colors chart</a></li>
+    <li><a href="https://markdown-guide.readthedocs.io/en/latest/basics.html">Markdown Basics</a></li>
+  </ul>
+  <li><a href="https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-and-net-core">Microsoft .NET and .NET Core Life-cycle</a></li>
 
 </body>
 </html>
