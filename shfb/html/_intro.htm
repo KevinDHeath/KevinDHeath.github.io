@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="../icons/favicon.ico" />
+  <link rel="stylesheet" href="../css/bulma.css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/presentationStyle.css" />
+  <link rel="stylesheet" href="../css/vs.min.css" />
+  <script src="../scripts/jquery-3.5.1.min.js"></script>
+  <script src="../scripts/clipboard.min.js"></script>
+  <script src="../scripts/highlight.min.js"></script>
+  <script src="../scripts/presentationStyle.js"></script>
+  <title>Common.Wpf.Themes</title>
+  <meta name="Title" content="Common.Wpf.Themes" />
+  <meta name="Help.Id" content="e6e60a0c-f708-479e-bc65-bcdc99253c7b" />
+  <meta name="Help.ContentType" content="Concepts" />
+  <meta name="guid" content="e6e60a0c-f708-479e-bc65-bcdc99253c7b" />
+  <meta name="Description" content="Contains Windows Desktop resources which can be includes in WPF .NET projects." />
+  <meta name="tocFile" content="../toc/IDA.xml" />
+</head>
+
+<body>
+  <div class="fixedLayout">
+    <div id="Header" class="fixedHeader">
+      <div class="pageHeader level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">Common Components Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger"><button class="button" aria-haspopup="true"
+                  aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i
+                      class="fa fa-angle-down" aria-hidden="true"></i></span></button></div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem"
+                    data-languageId="cs">C#</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200"
+                    placeholder="Search" /><span class="icon is-small is-left"><i
+                      class="fa fa-search"></i></span><button id="SearchButton" type="submit"
+                    class="is-hidden"></button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixedContent">
+      <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+        <ul id="TopicBreadcrumbs">
+        </ul>
+      </nav>
+      <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+        <div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div>
+        <div id="TOCColumn" class="column is-hidden-mobile">
+          <nav class="toc">
+            <ul id="TableOfContents" class="toc-menu">
+              <li><a id="49df9d44-1829-451a-8e1a-97b409117a8d" href="Buttons.htm">Buttons</a></li>
+              <li><a id="7ef743eb-f64b-4ea3-9cb6-35a909f29e97" href="7ef743eb-f64b-4ea3-9cb6-35a909f29e97.htm">Check Boxes</a></li>
+              <li><a id="976d257f-b08a-4132-88ba-59d46c2a43fe" href="976d257f-b08a-4132-88ba-59d46c2a43fe.htm">Combo Boxes</a></li>
+              <li><a id="263751ce-169e-469d-ac4a-3c1e9c574e42" href="263751ce-169e-469d-ac4a-3c1e9c574e42.htm">Date Pickers</a></li>
+              <li><a id="02a890fd-1708-4c58-88c6-4f16fe81e8e8" href="02a890fd-1708-4c58-88c6-4f16fe81e8e8.htm">List Views</a></li>
+              <li><a id="38a4fd8e-7e09-4ff2-a783-1288f3bbde56" href="38a4fd8e-7e09-4ff2-a783-1288f3bbde56.htm">Tab Controls</a></li>
+              <li><a id="c6f0f629-27ee-4d30-8369-d60796edca67" href="c6f0f629-27ee-4d30-8369-d60796edca67.htm">Text Boxes</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="Resizer" class="is-hidden"></div>
+        <div id="TopicContent" class="column content is-7">
+          <h1>Common.Wpf.Themes</h1>
+          <div>
+            <p>Contains Windows Desktop resources which can be includes in WPF .NET projects.</p>
+            <p>Windows Presentation Foundation (WPF) is a free and open-source graphical subsystem originally
+              developed by Microsoft for rendering user interfaces in Windows-based applications.
+              WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0 in 2006.</p>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>Getting Started</h2>
+          <div id="IDBABSection">
+            <p>To include the resources in a WPF project:</p>
+            <ul>
+              <li>
+                <p>Add a reference to the <strong><q>Common.Wpf.Resources</q></strong>
+                  assembly or package.</p>
+              </li>
+              <li>
+                <p>Include the required resource dictionaries in the
+                  <strong><q>App.xaml</q></strong> file.
+                </p>
+              </li>
+            </ul>
+            <p>The base theme resources are contained in a <strong><q>Common.xaml</q></strong>
+              dictionary.<br /><strong>Default font details:</strong> Common.FontFamily,
+              Common.FontSize<br /><strong>Border color brushes:</strong> Focus.Border, MouseOver.Border, and
+              Validation.HasError<br /><strong>Styles and templates:</strong> commonEditBorderStyle,
+              commonSmallTextBlockStyle, commonErrorItemTemplate, commonErrorItemsStyle,
+              commonErrorTextBlockStyle</p>
+            <p>If you need to access any of these directly, and you don’t have the TextBox dictionary included,
+              you will need to specify the following:</p>
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
+                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
+                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codePanel hljs">
+                <pre xml:space="preserve"><code class="language-xml">&lt;ResourceDictionary&gt;
+  &lt;ResourceDictionary.MergedDictionaries&gt;
+    &lt;ResourceDictionary Source="pack://application:,,,/Common.Wpf.Resources;component/Themes/Common.xaml"/&gt;
+  &lt;/ResourceDictionary.MergedDictionaries&gt;
+&lt;/ResourceDictionary&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>How To</h2>
+          <div id="IDCABSection">
+            <p>To override any of the default settings for a resource, you can create a custom style and base it
+              on a Common style.<br />
+              For example, to use 'adornment style' error messages for a Text Box:</p>
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
+                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
+                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codePanel hljs">
+                <pre xml:space="preserve"><code class="language-xml">&lt;Style x:Key="errorTextBox1" TargetType="{x:Type TextBox}" BasedOn="{StaticResource commonTextBoxStyle}"&gt;
+  &lt;Setter Property="Validation.ErrorTemplate" Value="{StaticResource commonErrorItemTemplate}"/&gt;
+&lt;/Style&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>See Also</h2>
+          <div id="seeAlsoSection">
+            <h4>Other Resources</h4>
+            <div><a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/styles-templates-overview"
+                target="_blank" rel="noopener noreferrer">Windows Desktop Styles and templates</a></div>
+          </div>
+        </div>
+        <div id="InThisArticleColumn" class="column is-hidden-mobile">
+          <nav class="menu sticky is-hidden">
+            <p class="menu-label"><strong>In This Article</strong></p>
+            <ul id="InThisArticleMenu" class="menu-list">
+              <li><a class="quickLink">Getting Started</a></li>
+              <li><a class="quickLink">How To</a></li>
+              <li><a class="quickLink">See Also</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+      <div class="columns">
+        <div class="column"> 
+        </div>
+        <div class="column"> 
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>$(function () {
+      SetDefaultLanguage("cs");
+      LoadTocFile(null, null);
+      InitializeQuickLinks();
+
+      $(".toggleSection").click(function () {
+        SectionExpandCollapse(this);
+      });
+
+      $(".toggleSection").keypress(function () {
+        SectionExpandCollapseCheckKey(this, event)
+      });
+      hljs.highlightAll();
+    });</script>
+</body>
+
+</html>
