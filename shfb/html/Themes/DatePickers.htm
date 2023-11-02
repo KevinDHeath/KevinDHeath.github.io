@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="../../icons/help.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../css/presentationStyle.css" />
+  <link rel="stylesheet" href="../../css/vs.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery.min.js@3.5.1/jquery.min.js"></script>
+  <script src="../../scripts/clipboard.min.js"></script>
+  <script src="../../scripts/highlight.min.js"></script>
+  <script src="../../scripts/presentationStyle.js"></script>
+  <title>Date Pickers</title>
+  <meta name="Title" content="Date Pickers" />
+</head>
+
+<body>
+  <div class="fixedLayout">
+    <div id="Header" class="fixedHeader">
+      <div class="pageHeader level mb-0 py-2 px-4">
+        <div class="level-left">
+          <div class="level-item">Common Components Documentation</div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <span id="CurrentLanguage"></span>
+            <a class="languageFilterItem" data-languageId="cs"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixedContent">
+      <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+        <ul id="TopicBreadcrumbs">
+          <li><a href="../Themes.htm">Common.Wpf.Themes</a></li>
+          <li><p>Date Pickers</p></li>
+        </ul>
+      </nav>
+      <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+        <div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div>
+        <div id="TOCColumn" class="column is-hidden-mobile">
+          <nav class="toc">
+            <ul id="TableOfContents" class="toc-menu">
+              <li><a href="Buttons.htm">Buttons</a></li>
+              <li><a href="CheckBoxes.htm">Check Boxes</a></li>
+              <li><a href="ComboBoxes.htm">Combo Boxes</a></li>
+              <li><b><a href="DatePickers.htm">Date Pickers</a></b></li>
+              <li><a href="ListViews.htm">List Views</a></li>
+              <li><a href="TabControls.htm">Tab Controls</a></li>
+              <li><a href="TextBoxes.htm">Text Boxes</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="Resizer" class="is-hidden"></div>
+        <div id="TopicContent" class="column content is-7">
+          <h1>Date Pickers</h1>
+          <div class="summary">
+            <p>These styles relate to the Custom <q>TargetType="{x:Type cc:DatePicker}</q> control class.</p>
+          </div>
+          <div>
+            <p>The control provides a dependency property to determine if error messages are shown below the control.</p>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>controlDatePickerStyle</h2>
+          <div id="IDCABSection">
+            <p>This style is automatically assigned to the Date Picker custom control:</p>
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
+                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
+                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codePanel hljs">
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:DatePicker/&gt;</code></pre>
+              </div>
+            </div>
+            <h3 class="quickLinkHeader">Default properties</h3>
+            <div>
+              <ul>
+                <li><p>IsErrorShown = "False"</p></li>
+                <li><p>SelectedDateFormat = "Long"</p></li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>IsErrorShown property</h2>
+          <div id="IDDABSection">
+            <p>Example of assigning the IsErrorShown style to a Date Picker custom control:</p>
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
+                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
+                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codePanel hljs">
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:DatePicker IsErrorShown="True"/&gt;</code></pre>
+              </div>
+            </div>
+            <h3 class="quickLinkHeader">Notes</h3>
+            <div>
+              <ol>
+                <li>
+                  <p>Use this property to show error messages in a text block attached to the date picker.
+                    This allows for fields to automatically adjust their position on the form:<br /><span
+                      class="mediaInline"><img alt="With Errors Style" src="../../media/WithErrorsStyle.png" /></span></p>
+                </li>
+                <li>
+                  <p>To allow the whole form <em>(i.e., Window)</em> to adjust its size, the property SizeToContent="Height" must be set.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>See Also</h2>
+          <div id="seeAlsoSection">
+            <h4>Other Resources</h4>
+            <div><a href="../Controls/DatePicker.htm" target="_self"
+                rel="noopener noreferrer">Common.Wpf.Controls.DatePicker</a></div>
+          </div>
+        </div>
+        <div id="InThisArticleColumn" class="column is-hidden-mobile">
+          <nav class="menu sticky is-hidden">
+            <p class="menu-label"><strong>In This Article</strong></p>
+            <ul id="InThisArticleMenu" class="menu-list">
+              <li><a class="quickLink">controlDatePickerStyle</a></li>
+              <li><a class="quickLink">Default properties</a></li>
+              <li><a class="quickLink">IsErrorShown property</a></li>
+              <li><a class="quickLink">Notes</a></li>
+              <li><a class="quickLink">See Also</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+      </div>
+    </footer>
+  </div>
+  <script>$(function () {
+      SetDefaultLanguage("cs");
+      LoadTocFile(null, null);
+      InitializeQuickLinks();
+
+      $(".toggleSection").click(function () {
+        SectionExpandCollapse(this);
+      });
+
+      $(".toggleSection").keypress(function () {
+        SectionExpandCollapseCheckKey(this, event)
+      });
+      hljs.highlightAll();
+    });</script>
+</body>
+
+</html>

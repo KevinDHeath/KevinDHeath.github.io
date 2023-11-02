@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="icons/help.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="../js/site.js"></script>
+  <title>Common Components</title>
+</head>
+<body>
+
+  <nav class="navbar is-black">
+  <!-- logo / brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="icons/help.png" style="max-height: 40px" class="py-2 px-2">
+        <p>MVVM WPF References</p>
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      </div>
+  
+    <div class="navbar-menu" id="nav-links">
+      <!-- right links -->
+      <div class="navbar-end">
+        <a class="navbar-item" href="./html/Controls.htm">Wpf.Controls</a>
+        <a class="navbar-item" href="./html/Themes.htm">Wpf.Themes</a>
+        </div>
+    </div>
+  </nav>
+  <div class="content has-text-white has-background-black pt-0"><p style="font-size: small; font-style: italic; text-align: right; padding-right: 10px;">Last updated:
+    <script type="text/javascript">fnWriteLastUpdated()</script></p></div>
+  
+  <!-- breadcrumbs -->
+  <div class="section pt-0 pb-0">
+    <nav class="breadcrumb has-arrow-separator">
+      <ul class="is-size-6 container">
+        <li><a href="../index.html" class="has-text-grey">Home</a></li>
+        <li class="is-active"><a href="#">MVVM WPF References</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- product info -->
+  <section class="section pt-2 pb-1">
+    <div class="container">
+
+      <div class="columns is-vtop is-multiline">
+        <div class="column is-6-tablet is-3-desktop">
+          <div class="is-size-4 mb-4">MVVM</div>
+          <p>Model-View-ViewModel is an architectural pattern used in software engineering that originated from Microsoft
+            which is specialized in the Presentation Model design
+            pattern. It is based on the Model-view-controller pattern (MVC), and is targeted at modern
+            UI development platforms.</p>
+        </div>
+        <div class="column is-6-tablet is-5-desktop">
+          <img src="media/MVVMPattern1.png" alt="Placeholder image">
+          <p class="mb-4">MVVM is a way of creating client applications that leverages core features of the WPF platform,
+            allows for simple unit testing of application functionality, and helps developers and designers work
+            together with less technical difficulties.</p>
+        </div>
+        <div class="column is-12-tablet is-4-desktop">
+          <div class="is-size-4 mb-4">WPF</div>
+          <p>Windows Presentation Foundation (WPF) is a free and open-source graphical subsystem originally
+            developed by Microsoft for rendering user interfaces in Windows-based applications.
+            WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0 in 2006.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-0 pb-2">
+    <div class="container">
+      <div class="columns is-variable is-8">
+        <div class="column is-7-tablet">
+          <!-- tabs -->
+          <div class="tabs is-boxed is-centered">
+            <ul>
+              <li class="is-active" data-target="ms-links">
+                <a>Microsoft Links</a> 
+              </li>
+              <li data-target="other-links">
+                <a>Other Links</a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-2" id="tab-content">
+            <div id="ms-links">
+              <ul>
+                <li><a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm" target="_new">
+                  Model-View-ViewModel (MVVM)</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/" target="_new">
+                  Windows Presentation Foundation (WPF)</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/" target="_new">
+                  Introduction to the MVVM Toolkit</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/styles-templates-overview" target="_new">
+                  Styles and templates</a></li>
+              </ul>
+            </div>
+            <div id="other-links" class="is-hidden">
+              <ul>
+                <li><a href="https://intellitect.com/blog/getting-started-model-view-viewmodel-mvvm-pattern-using-windows-presentation-framework-wpf/" target="_new">
+                  Master the Basics of MVVM for Building WPF Applications</a></li>
+                <li><a href="https://egvijayanand.in/2022/04/22/mvvm-made-easy/" target="_new">
+                  MVVM Made Easy with Microsoft MVVM Toolkit Part 1</a></li>
+                <li><a href="https://egvijayanand.in/2022/05/09/mvvm-made-easy-with-microsoft-mvvm-toolkit-part-2/" target="_new">
+                  MVVM Made Easy with Microsoft MVVM Toolkit Part 2</a></li>
+              </ul>
+                        </div>
+          </div>
+        </div>
+        <div class="column is-5-tablet">
+          <!-- message box -->
+          <div class="message is-dark">
+            <div class="message-header">
+              <p>Earn Points</p>
+            </div>
+            <div class="message-body">
+              <p>Test of modal form.</p>
+              <div class="has-text-centered">
+                <button class="button mt-5" id="signup">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal -->
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white py-5 px-5">
+      <h3 class="title mb-6">Join the Club</h3>
+      <form>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Name">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="Email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="mt-6 has-text-centered">
+          <button class="button is-warning">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer border-top py-3 fixedFooter">
+    <div class="content has-text-centered">
+      <p>Copyright 2022 Kevin D. Heath</p>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
