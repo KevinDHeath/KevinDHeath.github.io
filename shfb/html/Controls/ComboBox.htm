@@ -14,8 +14,8 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>DatePicker Class</title>
-  <meta name="Title" content="DatePicker" />
+  <title>ComboBox Class</title>
+  <meta name="Title" content="ComboBox" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
           <li><a href="../Controls.htm">Wpf.Controls</a></li>
-          <li><p class="has-text-grey">DatePicker</p></li>
+          <li><p class="has-text-grey">ComboBox</p></li>
         </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -47,8 +47,8 @@
         <div id="TOCColumn" class="column is-hidden-mobile">
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
-              <li><a href="ComboBox.htm">ComboBox</a></li>
-              <li><b><a href="DatePicker.htm">DatePicker</a></b></li>
+              <li><b><a href="ComboBox.htm">ComboBox</a></b></li>
+              <li><a href="DatePicker.htm">DatePicker</a></li>
               <li><a href="FilePathTextBox.htm">FilePathTextBox</a></li>
               <li><a href="HamburgerMenu.htm">HamburgerMenu</a></li>
               <li><a href="HamburgerMenuItem.htm">HamburgerMenuItem</a></li>
@@ -61,8 +61,8 @@
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Date<wbr />Picker Class</h1>
-          <div class="summary">Extension to the System.Windows.Controls.DatePicker class.</div>
+          <h1>Combo<wbr />Box Class</h1>
+          <div class="summary">Extension to the System.Windows.Controls.ComboBox class.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
                 class="fa fa-angle-down"></i></span>Definition</h2>
           <div id="IDBSection"><strong>Namespace:</strong> <a
@@ -72,8 +72,7 @@
                     class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
                         class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre
-                  xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">DatePicker</span> : <span class="identifier">DatePicker</span></code></pre>
+                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ComboBox</span> : <span class="identifier">ComboBox</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
@@ -99,9 +98,15 @@
                   href="https://learn.microsoft.com/dotnet/api/system.windows.controls.control" target="_blank"
                   rel="noopener noreferrer">Control</a> <span class="icon is-small"><i
                     class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datepicker" target="_blank"
-                  rel="noopener noreferrer">DatePicker</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <span class="selflink">DatePicker</span></dd>
+                  href="https://learn.microsoft.com/dotnet/api/system.windows.controls.itemscontrol" target="_blank"
+                  rel="noopener noreferrer">ItemsControl</a> <span class="icon is-small"><i
+                    class="fa fa-arrow-right"></i></span> <a
+                  href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.selector"
+                  target="_blank" rel="noopener noreferrer">Selector</a> <span class="icon is-small"><i
+                    class="fa fa-arrow-right"></i></span> <a
+                  href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox" target="_blank"
+                  rel="noopener noreferrer">ComboBox</a> <span class="icon is-small"><i
+                    class="fa fa-arrow-right"></i></span> <span class="selflink">ComboBox</span></dd>
             </dl>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
@@ -113,8 +118,7 @@
                   class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
                       class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre
-                  xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
               </div>
             </div>
             2. Define the control specifying whether error messages should be shown below the control:<br />
@@ -123,8 +127,7 @@
                   class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
                       class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre
-                  xml:space="preserve"><code class="language-xml">&lt;cc:DatePicker IsErrorShown="True"... /&gt;</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:ComboBox IsErrorShown="True"... /&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -133,8 +136,8 @@
           <div id="IDBEASection">
             <table id="ConstructorList" class="table is-hoverable">
               <tr>
-                <td><a href="M_Common_Wpf_Controls_DatePicker__ctor.htm">DatePicker</a></td>
-                <td>Initializes a new instance of the DatePicker class.</td>
+                <td><a href="M_Common_Wpf_Controls_ComboBox__ctor.htm">ComboBox</a></td>
+                <td>Initializes a new instance of the ComboBox class.</td>
               </tr>
             </table>
           </div>
@@ -143,7 +146,7 @@
           <div id="IDCEASection">
             <table id="PropertyList" class="table is-hoverable">
               <tr>
-                <td><a href="P_Common_Wpf_Controls_DatePicker_IsErrorShown.htm">IsErrorShown</a></td>
+                <td><a href="P_Common_Wpf_Controls_ComboBox_IsErrorShown.htm">IsErrorShown</a></td>
                 <td>Gets or sets whether error messages are shown to the user below the control.
                   The default is false.</td>
               </tr>
@@ -154,11 +157,13 @@
           <div id="IDAEASection">
             <table id="FieldList" class="table is-hoverable">
               <tr>
-                <td><a href="F_Common_Wpf_Controls_DatePicker_IsErrorShownProperty.htm">IsErrorShownProperty</a></td>
+                <td><a href="F_Common_Wpf_Controls_ComboBox_IsErrorShownProperty.htm">IsErrorShownProperty</a></td>
                 <td>Identifies the IsErrorShown dependency property.</td>
               </tr>
             </table>
           </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>See Also</h2>
         </div>
         <div id="InThisArticleColumn" class="column is-hidden-mobile">
           <nav class="menu sticky is-hidden">
@@ -176,10 +181,8 @@
     </div>
     <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
       <div class="columns">
-        <div class="column">
-        </div>
-        <div class="column">
-        </div>
+        <div class="column"></div>
+        <div class="column"></div>
       </div>
     </footer>
   </div>

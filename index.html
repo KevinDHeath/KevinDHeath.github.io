@@ -3,44 +3,70 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Kevin D. Heath</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <link rel="stylesheet" href="css/site.css" type="text/css" />
-  <link rel="stylesheet" href="css/toc.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <script src="js/site.js"></script>
+  <title>Kevin D. Heath</title>
   <base target="_blank">
 </head>
 
 <body>
-  <table>
-    <tr>
-      <td class="profile" rowspan="2"><a href="./mainsite/index.html" target="_self">
-        <img src="img/KHeath_small.jpg" width="91" height="84" /></a></td>
-      <td class="updated">Last updated:
-        <script type="text/javascript">fnWriteLastUpdated()</script>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h2 style="margin-top: 0pt;">Welcome to my GitHub Pages</h2>
-        <p>This site provides information about my favorite hobby, coding in C#!</p>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>
-        <div id="toc_container">
-          <p class="toc_title">Contents</p>
-          <ul class="toc_list">
-            <li><a href="https://github.com/KevinDHeath/MyProjects/wiki">Technical References</a></li>
-            <li><a href="./tech/dot-net-colors.html">Predefined Windows Desktop Colors chart</a></li>
-            <li><a href="./shfb/index.html" target="_self">MVVM WPF References</a></li>
-          </ul>
+  <div class="fixedHeader has-text-white has-background-black">
+    <div class="pageHeader level mb-0">
+      <div class="level-left">
+        <a class="level-item" href="./mainsite/index.html" target="_self">
+          <img src="img/KHeath_small.jpg" style="max-height: 60px" title="Kevin D. Heath"></a>
+          <p><span class="title is-4 has-text-white">Welcome to my GitHub Pages</span><br/>
+            <span style="font-size: smaller;">This site provides information about my favorite hobby, coding in C#!</span></p>  
+      </div>
+      <div class="level-right">
+        <p style="font-size: x-small; font-style: italic; margin-right: 6px;">Last updated:
+          <script type="text/javascript">fnWriteLastUpdated()</script><br/></p>
+      </div>
+    </div>
+  </div>
+  <section class="section pt-0">
+    <div class="container ml-0">
+      <div class="columns mt-1 is-multiline">
+        <div class="column is-6-tablet is-5-desktop">
+          <div class="card">
+            <header class="card-header has-background-black">
+              <p class="card-header-title has-text-white">Documentation</p>
+            </header>
+            <div class="card">
+              <div class="card-content pt-0">
+                <div class="content">
+                  <ul>
+                    <li><a href="https://github.com/KevinDHeath/MyProjects/wiki">Technical References</a></li>
+                    <li><a href="./shfb/index.html" target="_self">MVVM WPF References</a></li>
+                    <li><a href="./tech/dot-net-colors.html">Predefined Windows Desktop Colors</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </td>
-    </tr>
-  </table>
-
+        <div class="column is-6-tablet is-5-desktop">
+          <div class="card">
+            <header class="card-header has-background-black">
+              <p class="card-header-title has-text-white">Source Code</p>
+            </header>
+            <div class="card">
+              <div class="card-content pt-0">
+                <div class="content">
+                  <ul>
+                    <li><a href="https://github.com/KevinDHeath/SWAPI">StarWars API</a></li>
+                    <li><a href="https://github.com/KevinDHeath/MyProjects">My Projects</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+ </section>
 </body>
 
 </html>

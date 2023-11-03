@@ -13,6 +13,7 @@
   <script src="../../scripts/clipboard.min.js"></script>
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
+  <script src="../../../js/site.js"></script>
   <title>Buttons</title>
   <meta name="Title" content="Buttons" />
 </head>
@@ -20,21 +21,25 @@
 <body>
   <div class="fixedLayout">
     <div id="Header" class="fixedHeader">
-      <div class="pageHeader level mb-0 py-2 px-4">
-        <div class="level-left"><div class="level-item">Common Components Documentation</div></div>
+      <div class="pageHeader level mb-0 has-background-black">
+        <div class="level-left">
+          <div class="level-item"><img src="../../icons/help.png" style="max-height: 40px" class="py-2 px-2">
+            Common Components</div>
+        </div>
+        <span id="CurrentLanguage"></span>
+        <a class="languageFilterItem" data-languageId="cs"></a>
         <div class="level-right">
-          <div class="level-item">
-            <span id="CurrentLanguage"></span>
-            <a class="languageFilterItem" data-languageId="cs"></a>
-          </div>
-       </div>
+          <p style="font-size: small; font-style: italic; margin-right: 6px;">Last updated:
+            <script type="text/javascript">fnWriteLastUpdated()</script></p>
+        </div>
       </div>
     </div>
     <div class="fixedContent">
       <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
         <ul id="TopicBreadcrumbs">
-          <li><a href="../Themes.htm">Common.Wpf.Themes</a></li>
-          <li><p>Buttons</p></li>
+          <li><a href="../../index.html">MVVM WPF</a></li>
+          <li><a href="../Themes.htm">Wpf.Themes</a></li>
+          <li><p class="has-text-grey">Buttons</p></li>
         </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -122,19 +127,17 @@
     </footer>
   </div>
   <script>$(function () {
-      SetDefaultLanguage("cs");
-      LoadTocFile(null, null);
-      InitializeQuickLinks();
-
-      $(".toggleSection").click(function () {
-        SectionExpandCollapse(this);
-      });
-
-      $(".toggleSection").keypress(function () {
-        SectionExpandCollapseCheckKey(this, event)
-      });
-      hljs.highlightAll();
-    });</script>
+    SetDefaultLanguage("cs");
+    LoadTocFile(null, null);
+    InitializeQuickLinks();
+    $(".toggleSection").click(function () {
+      SectionExpandCollapse(this);
+    });
+    $(".toggleSection").keypress(function () {
+      SectionExpandCollapseCheckKey(this, event)
+    });
+    hljs.highlightAll();
+  });</script>
 </body>
 
 </html>

@@ -13,27 +13,32 @@
   <script src="../scripts/clipboard.min.js"></script>
   <script src="../scripts/highlight.min.js"></script>
   <script src="../scripts/presentationStyle.js"></script>
-  <title>Common.Wpf.Controls Namespace</title>
+  <script src="../../js/site.js"></script>
+  <title>Wpf.Controls</title>
   <meta name="Title" content="Common.Wpf.Controls" />
 </head>
 
 <body>
   <div class="fixedLayout">
     <div id="Header" class="fixedHeader">
-      <div class="pageHeader level mb-0 py-2 px-4">
-        <div class="level-left"><div class="level-item">Common Components Documentation</div></div>
+      <div class="pageHeader level mb-0 has-background-black">
+        <div class="level-left">
+          <div class="level-item"><img src="../icons/help.png" style="max-height: 40px" class="py-2 px-2">
+            Common Components</div>
+        </div>
+        <span id="CurrentLanguage"></span>
+        <a class="languageFilterItem" data-languageId="cs"></a>
         <div class="level-right">
-          <div class="level-item">
-            <span id="CurrentLanguage"></span>
-            <a class="languageFilterItem" data-languageId="cs"></a>
-          </div>
-       </div>
+          <p style="font-size: small; font-style: italic; margin-right: 6px;">Last updated:
+            <script type="text/javascript">fnWriteLastUpdated()</script></p>
+        </div>
       </div>
     </div>
     <div class="fixedContent">
       <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
         <ul id="TopicBreadcrumbs">
-          <li>Common.Wpf.Controls</li>
+          <li><a href="../index.html">MVVM WPF</a></li>
+          <li><p class="has-text-grey">Wpf.Controls</p></li>
          </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -55,7 +60,7 @@
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Common.Wpf.Controls Namespace</h1>
+          <h1>Wpf.Controls</h1>
           <div class="summary">Contains classes to create elements, known as controls, that enables a user to interact
             with an application.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
@@ -63,7 +68,7 @@
           <div id="IDACASection">
             <table id="classList" class="table is-hoverable">
               <tr>
-                <td><a href="T_Common_Wpf_Controls_ComboBox.htm">ComboBox</a></td>
+                <td><a href="Controls/ComboBox.htm">ComboBox</a></td>
                 <td>Extension to the System.Windows.Controls.ComboBox class.</td>
               </tr>
               <tr>
@@ -131,18 +136,16 @@
     </footer>
   </div>
   <script>$(function () {
-      SetDefaultLanguage("cs");
-      LoadTocFile(null, null);
-      InitializeQuickLinks();
-
-      $(".toggleSection").click(function () {
-        SectionExpandCollapse(this);
-      });
-
-      $(".toggleSection").keypress(function () {
-        SectionExpandCollapseCheckKey(this, event)
-      });
-    });</script>
+    SetDefaultLanguage("cs");
+    LoadTocFile(null, null);
+    InitializeQuickLinks();
+    $(".toggleSection").click(function () {
+      SectionExpandCollapse(this);
+    });
+    $(".toggleSection").keypress(function () {
+      SectionExpandCollapseCheckKey(this, event)
+    });
+  });</script>
 </body>
 
 </html>
