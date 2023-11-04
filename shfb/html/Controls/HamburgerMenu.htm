@@ -14,8 +14,8 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>ComboBox Class</title>
-  <meta name="Title" content="ComboBox" />
+  <title>HamburgerMenu Class</title>
+  <meta name="Title" content="HamburgerMenu" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
           <li><a href="../Controls.htm">Common.Wpf.Controls</a></li>
-          <li><p class="has-text-grey">ComboBox</p></li>
+          <li><p class="has-text-grey">HamburgerMenu</p></li>
         </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -47,11 +47,11 @@
         <div id="TOCColumn" class="column is-hidden-mobile">
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
-              <li><b><a href="ComboBox.htm">ComboBox</a></b></li>
+              <li><a href="ComboBox.htm">ComboBox</a></li>
               <li><a href="DatePicker.htm">DatePicker</a></li>
               <li><a href="DialogTypes.htm">DialogTypes</a></li>
               <li><a href="FilePathTextBox.htm">FilePathTextBox</a></li>
-              <li><a href="HamburgerMenu.htm">HamburgerMenu</a></li>
+              <li><b><a href="HamburgerMenu.htm">HamburgerMenu</a></b></li>
               <li><a href="HamburgerMenuItem.htm">HamburgerMenuItem</a></li>
               <li><a href="ModalDialog.htm">ModalDialog</a></li>
               <li><a href="NumericSpinner.htm">NumericSpinner</a></li>
@@ -62,24 +62,25 @@
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Combo Box Class</h1>
-          <div class="summary">Extension to the System.Windows.Controls.ComboBox class.</div>
+          <h1>Hamburger Menu Class</h1>
+          <div class="summary">Control to implement the Hamburger style menu (or <i>Navigation Drawer</i>) control.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Definition</h2>
           <div id="IDBSection"><p><strong>Namespace:</strong> Common.Wpf.Controls<br />
             <strong>Assembly: </strong>Common.Wpf.Controls.dll</p>
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons">
-              <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ComboBox</span> : <span class="identifier">System.Windows.Controls.ComboBox</span></code></pre>
+                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">HamburgerMenu</span> : <span class="identifier">Control</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
               <dt>Inheritance</dt>
               <dd>
-                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>
+                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
+                 rel="noopener noreferrer">Object</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject" target="_blank"
                  rel="noopener noreferrer">DispatcherObject</a>
@@ -99,16 +100,8 @@
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.control" target="_blank"
                  rel="noopener noreferrer">Control</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.itemscontrol" target="_blank"
-                 rel="noopener noreferrer">ItemsControl</a>
-                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.selector" target="_blank"
-                 rel="noopener noreferrer">Selector</a>
-                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox" target="_blank"
-                 rel="noopener noreferrer">ComboBox</a>
-                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <span class="selflink">ComboBox</span></dd>
+                <span class="selflink">HamburgerMenu</span>
+              </dd>
             </dl>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
@@ -123,34 +116,62 @@
                 <pre xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
               </div>
             </div>
-            2. Define the control specifying whether error messages should be shown below the control:<br />
+            2. Define the control with menu items:<br />
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
                 <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-xml">&lt;cc:ComboBox IsErrorShown="True"... /&gt;</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:HamburgerMenu IsOpen="{Binding IsChecked, ElementName=cbToggleMenu}" ...&gt;
+  &lt;custom:HamburgerMenu.Content&gt;
+    &lt;StackPanel Margin="0 10"&gt;
+      &lt;custom:HamburgerMenuItem&gt;
+        &lt;TextBlock Text="Introduction"/&gt;
+      &lt;/custom:HamburgerMenuItem&gt;
+    &lt;/StackPanel&gt;
+  &lt;/custom:HamburgerMenu.Content&gt;
+&lt;/cc:HamburgerMenu&gt;</code></pre>
+              </div>
+            </div>
+            3. In the <b>ViewModel</b> create the properties for binding:
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">C#</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codePanel hljs">
+                <pre xml:space="preserve"><code class="language-cs">public bool IsMenuOpen =&gt; _navigationStore.IsMenuOpen;</code></pre>
               </div>
             </div>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Constructors</h2>
-          <div id="IDBEASection">
+          <div id="IDEEASection">
             <table id="ConstructorList" class="table is-hoverable">
               <tr>
-                <td>ComboBox</td>
-                <td>Initializes a new instance of the ComboBox class.</td>
+                <td>HamburgerMenu</td>
+                <td>Initializes a new instance of the HamburgerMenu class.</td>
               </tr>
             </table>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
-            <i class="fa fa-angle-down"></i></span>Properties</h2>
-          <div id="IDCEASection">
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>Properties</h2>
+          <div id="IDFEASection">
             <table id="PropertyList" class="table is-hoverable">
               <tr>
-                <td>IsErrorShown</td>
-                <td>Gets or sets whether error messages are shown to the user below the control.
-                  The default is false.</td>
+                <td>Content</td>
+                <td>Gets or sets the menu content.</td>
+              </tr>
+              <tr>
+                <td>FallBackOpenWidth</td>
+                <td>Gets or sets the fall-back menu open width. The default is 100.</td>
+              </tr>
+              <tr>
+                <td>IsOpen</td>
+                <td>Gets or sets the menu open indicator. The default is false.</td>
+              </tr>
+              <tr>
+                <td>OpenCloseDuration</td>
+                <td>Gets or sets the menu open duration. The default is Automatic.</td>
               </tr>
             </table>
           </div>

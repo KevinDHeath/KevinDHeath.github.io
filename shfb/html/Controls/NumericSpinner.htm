@@ -14,8 +14,8 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>ComboBox Class</title>
-  <meta name="Title" content="ComboBox" />
+  <title>NumericSpinner Class</title>
+  <meta name="Title" content="NumericSpinner" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
           <li><a href="../Controls.htm">Common.Wpf.Controls</a></li>
-          <li><p class="has-text-grey">ComboBox</p></li>
+          <li><p class="has-text-grey">NumericSpinner</p></li>
         </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -47,14 +47,14 @@
         <div id="TOCColumn" class="column is-hidden-mobile">
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
-              <li><b><a href="ComboBox.htm">ComboBox</a></b></li>
+              <li><a href="ComboBox.htm">ComboBox</a></li>
               <li><a href="DatePicker.htm">DatePicker</a></li>
               <li><a href="DialogTypes.htm">DialogTypes</a></li>
               <li><a href="FilePathTextBox.htm">FilePathTextBox</a></li>
               <li><a href="HamburgerMenu.htm">HamburgerMenu</a></li>
               <li><a href="HamburgerMenuItem.htm">HamburgerMenuItem</a></li>
               <li><a href="ModalDialog.htm">ModalDialog</a></li>
-              <li><a href="NumericSpinner.htm">NumericSpinner</a></li>
+              <li><b><a href="NumericSpinner.htm">NumericSpinner</a></b></li>
               <li><a href="SearchTextBox.htm">SearchTextBox</a></li>
               <li><a href="SortableListView.htm">SortableListView</a></li>
             </ul>
@@ -62,24 +62,26 @@
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Combo Box Class</h1>
-          <div class="summary">Extension to the System.Windows.Controls.ComboBox class.</div>
+          <h1>Numeric Spinner Class</h1>
+          <div class="summary">Control to implement the ability to increase and decrease numeric values using
+            a 'NumericUpDown' style control.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Definition</h2>
           <div id="IDBSection"><p><strong>Namespace:</strong> Common.Wpf.Controls<br />
             <strong>Assembly: </strong>Common.Wpf.Controls.dll</p>
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons">
-              <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ComboBox</span> : <span class="identifier">System.Windows.Controls.ComboBox</span></code></pre>
+                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">NumericSpinner</span> : <span class="identifier">TextBox</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
               <dt>Inheritance</dt>
               <dd>
-                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>
+                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
+                 rel="noopener noreferrer">Object</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject" target="_blank"
                  rel="noopener noreferrer">DispatcherObject</a>
@@ -99,16 +101,14 @@
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.control" target="_blank"
                  rel="noopener noreferrer">Control</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.itemscontrol" target="_blank"
-                 rel="noopener noreferrer">ItemsControl</a>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.textboxbase" target="_blank"
+                 rel="noopener noreferrer">TextBoxBase</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.selector" target="_blank"
-                 rel="noopener noreferrer">Selector</a>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.textbox" target="_blank"
+                 rel="noopener noreferrer">TextBox</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox" target="_blank"
-                 rel="noopener noreferrer">ComboBox</a>
-                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <span class="selflink">ComboBox</span></dd>
+                <span class="selflink">NumericSpinner</span>
+              </dd>
             </dl>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
@@ -123,34 +123,61 @@
                 <pre xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
               </div>
             </div>
-            2. Define the control specifying whether error messages should be shown below the control:<br />
+            2. Define the control specifying the minimum and maximum values:<br />
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
                 <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-xml">&lt;cc:ComboBox IsErrorShown="True"... /&gt;</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:NumericSpinner MinValue="0" MaxValue="140"... /&gt;</code></pre>
               </div>
             </div>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Constructors</h2>
-          <div id="IDBEASection">
+          <div id="IDGEASection">
             <table id="ConstructorList" class="table is-hoverable">
               <tr>
-                <td>ComboBox</td>
-                <td>Initializes a new instance of the ComboBox class.</td>
+                <td>NumericSpinner</td>
+                <td>Initializes a new instance of the NumericSpinner class.</td>
               </tr>
             </table>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Properties</h2>
-          <div id="IDCEASection">
+          <div id="IDIEASection">
             <table id="PropertyList" class="table is-hoverable">
+              <tr>
+                <td>Decimals</td>
+                <td>Gets or sets the number of decimals to display. The default is zero.</td>
+              </tr>
               <tr>
                 <td>IsErrorShown</td>
                 <td>Gets or sets whether error messages are shown to the user below the control.
                   The default is false.</td>
+              </tr>
+              <tr>
+                <td><a>MaxValue</td>
+                <td>Gets or sets the maximum value allowed. The default is decimal maximum.</td>
+              </tr>
+              <tr>
+                <td>MinValue</td>
+                <td>Gets or sets the minimum value allowed. The default is decimal minimum.</td>
+              </tr>
+              <tr>
+                <td>Step</td>
+                <td>Gets or sets the increase/decrease value whenever a button is used.
+                  The default is one.</td>
+              </tr>
+            </table>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>Events</h2>
+          <div id="IDAEASection">
+            <table id="EventList" class="table is-hoverable">
+              <tr>
+                <td>PropertyChanged</td>
+                <td>Occurs when a property has changed.</td>
               </tr>
             </table>
           </div>
@@ -163,6 +190,7 @@
               <li><a class="quickLink">Remarks</a></li>
               <li><a class="quickLink">Constructors</a></li>
               <li><a class="quickLink">Properties</a></li>
+              <li><a class="quickLink">Events</a></li>
             </ul>
           </nav>
         </div>

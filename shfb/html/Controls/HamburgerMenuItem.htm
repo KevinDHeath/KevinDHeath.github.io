@@ -14,8 +14,8 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>ComboBox Class</title>
-  <meta name="Title" content="ComboBox" />
+  <title>HamburgerMenuItem Class</title>
+  <meta name="Title" content="HamburgerMenuItem" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
           <li><a href="../Controls.htm">Common.Wpf.Controls</a></li>
-          <li><p class="has-text-grey">ComboBox</p></li>
+          <li><p class="has-text-grey">HamburgerMenuItem</p></li>
         </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -47,12 +47,12 @@
         <div id="TOCColumn" class="column is-hidden-mobile">
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
-              <li><b><a href="ComboBox.htm">ComboBox</a></b></li>
+              <li><a href="ComboBox.htm">ComboBox</a></li>
               <li><a href="DatePicker.htm">DatePicker</a></li>
               <li><a href="DialogTypes.htm">DialogTypes</a></li>
               <li><a href="FilePathTextBox.htm">FilePathTextBox</a></li>
               <li><a href="HamburgerMenu.htm">HamburgerMenu</a></li>
-              <li><a href="HamburgerMenuItem.htm">HamburgerMenuItem</a></li>
+              <li><b><a href="HamburgerMenuItem.htm">HamburgerMenuItem</a></b></li>
               <li><a href="ModalDialog.htm">ModalDialog</a></li>
               <li><a href="NumericSpinner.htm">NumericSpinner</a></li>
               <li><a href="SearchTextBox.htm">SearchTextBox</a></li>
@@ -62,24 +62,25 @@
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Combo Box Class</h1>
-          <div class="summary">Extension to the System.Windows.Controls.ComboBox class.</div>
+          <h1>Hamburger<wbr />Menu<wbr />Item Class</h1>
+          <div class="summary">Control to implement the Hamburger menu (or Navigation Drawer) style item class.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Definition</h2>
           <div id="IDBSection"><p><strong>Namespace:</strong> Common.Wpf.Controls<br />
             <strong>Assembly: </strong>Common.Wpf.Controls.dll</p>
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons">
-              <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ComboBox</span> : <span class="identifier">System.Windows.Controls.ComboBox</span></code></pre>
+                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">HamburgerMenuItem</span> : <span class="identifier">RadioButton</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
               <dt>Inheritance</dt>
               <dd>
-                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>
+                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
+                 rel="noopener noreferrer">Object</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject" target="_blank"
                  rel="noopener noreferrer">DispatcherObject</a>
@@ -99,58 +100,29 @@
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.control" target="_blank"
                  rel="noopener noreferrer">Control</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.itemscontrol" target="_blank"
-                 rel="noopener noreferrer">ItemsControl</a>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.contentcontrol" target="_blank"
+                 rel="noopener noreferrer">ContentControl</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.selector" target="_blank"
-                 rel="noopener noreferrer">Selector</a>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.buttonbase" target="_blank"
+                 rel="noopener noreferrer">ButtonBase</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox" target="_blank"
-                 rel="noopener noreferrer">ComboBox</a>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.togglebutton" target="_blank"
+                 rel="noopener noreferrer">ToggleButton</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <span class="selflink">ComboBox</span></dd>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.radiobutton" target="_blank"
+                 rel="noopener noreferrer">RadioButton</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <span class="selflink">HamburgerMenuItem</span>
+              </dd>
             </dl>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
-            <i class="fa fa-angle-down"></i></span>Remarks</h2>
-          <div id="IDBCSection">
-            1. Add a namespace attribute to the root element of the markup file it is to be used in:<br />
-            <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
-                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
-                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
-              <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
-              </div>
-            </div>
-            2. Define the control specifying whether error messages should be shown below the control:<br />
-            <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
-                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
-                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
-              <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-xml">&lt;cc:ComboBox IsErrorShown="True"... /&gt;</code></pre>
-              </div>
-            </div>
-          </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Constructors</h2>
-          <div id="IDBEASection">
+          <div id="IDAEASection">
             <table id="ConstructorList" class="table is-hoverable">
               <tr>
-                <td>ComboBox</td>
-                <td>Initializes a new instance of the ComboBox class.</td>
-              </tr>
-            </table>
-          </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
-            <i class="fa fa-angle-down"></i></span>Properties</h2>
-          <div id="IDCEASection">
-            <table id="PropertyList" class="table is-hoverable">
-              <tr>
-                <td>IsErrorShown</td>
-                <td>Gets or sets whether error messages are shown to the user below the control.
-                  The default is false.</td>
+                <td>HamburgerMenuItem</td>
+                <td>Initializes a new instance of the <span class="selflink">HamburgerMenuItem</span> class</td>
               </tr>
             </table>
           </div>
@@ -160,9 +132,7 @@
             <p class="menu-label"><strong>In This Article</strong></p>
             <ul id="InThisArticleMenu" class="menu-list">
               <li><a class="quickLink">Definition</a></li>
-              <li><a class="quickLink">Remarks</a></li>
               <li><a class="quickLink">Constructors</a></li>
-              <li><a class="quickLink">Properties</a></li>
             </ul>
           </nav>
         </div>

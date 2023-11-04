@@ -14,8 +14,8 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>ComboBox Class</title>
-  <meta name="Title" content="ComboBox" />
+  <title>SortableListView Class</title>
+  <meta name="Title" content="SortableListView" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
           <li><a href="../Controls.htm">Common.Wpf.Controls</a></li>
-          <li><p class="has-text-grey">ComboBox</p></li>
+          <li><p class="has-text-grey">SortableListView</p></li>
         </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -47,7 +47,7 @@
         <div id="TOCColumn" class="column is-hidden-mobile">
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
-              <li><b><a href="ComboBox.htm">ComboBox</a></b></li>
+              <li><a href="ComboBox.htm">ComboBox</a></li>
               <li><a href="DatePicker.htm">DatePicker</a></li>
               <li><a href="DialogTypes.htm">DialogTypes</a></li>
               <li><a href="FilePathTextBox.htm">FilePathTextBox</a></li>
@@ -56,32 +56,33 @@
               <li><a href="ModalDialog.htm">ModalDialog</a></li>
               <li><a href="NumericSpinner.htm">NumericSpinner</a></li>
               <li><a href="SearchTextBox.htm">SearchTextBox</a></li>
-              <li><a href="SortableListView.htm">SortableListView</a></li>
+              <li><b><a href="SortableListView.htm">SortableListView</a></b></li>
             </ul>
           </nav>
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Combo Box Class</h1>
-          <div class="summary">Extension to the System.Windows.Controls.ComboBox class.</div>
+          <h1>Sortable<wbr />List<wbr />View Class</h1>
+          <div class="summary">Control to implement the sorting and filtering of a ListView.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Definition</h2>
           <div id="IDBSection"><p><strong>Namespace:</strong> Common.Wpf.Controls<br />
             <strong>Assembly: </strong>Common.Wpf.Controls.dll</p>
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons">
-              <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ComboBox</span> : <span class="identifier">System.Windows.Controls.ComboBox</span></code></pre>
+                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">SortableListView</span> : <span class="identifier">ListView</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
               <dt>Inheritance</dt>
               <dd>
-                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>
+                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
+                 rel="noopener noreferrer">Object</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject" target="_blank"
+                <a  href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject" target="_blank"
                  rel="noopener noreferrer">DispatcherObject</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject" target="_blank"
@@ -105,10 +106,14 @@
                 <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.primitives.selector" target="_blank"
                  rel="noopener noreferrer">Selector</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.combobox" target="_blank"
-                 rel="noopener noreferrer">ComboBox</a>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.listbox" target="_blank"
+                 rel="noopener noreferrer">ListBox</a>
                 <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
-                <span class="selflink">ComboBox</span></dd>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.listview" target="_blank"
+                 rel="noopener noreferrer">ListView</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <span class="selflink">SortableListView</span>
+              </dd>
             </dl>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
@@ -123,34 +128,93 @@
                 <pre xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
               </div>
             </div>
-            2. Define the control specifying whether error messages should be shown below the control:<br />
+            2. Define the control in XAML setting the <b>DefaultColumn</b> as a one-based column index:<br />
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
                 <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-xml">&lt;cc:ComboBox IsErrorShown="True"... /&gt;</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:SortableListView DefaultColumn="2"... /&gt;</code></pre>
               </div>
             </div>
+            3. To implement filtering make sure the <b>FilterPredicate</b> property is set on the control.<br />
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codePanel hljs">
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:SortableListView FilterPredicate="{Binding MyFilter}"... /&gt;</code></pre>
+              </div>
+            </div>
+            4. In the <b>ViewModel</b> create the callback function to handle the filtering requirements:
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">C#</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codePanel hljs">
+                <pre xml:space="preserve"><code class="language-cs">private string _filterText = string.Empty;
+
+public Func&lt;object bool&gt; MyFilter
+{
+  get
+  {
+    return (item) =&gt;
+    {
+      var person = item as Person;
+      return person.Name.Contains( _filterText ) ||
+      person.Occupation.Contains( _filterText );
+    };
+  }
+}</code></pre>
+              </div>
+            </div>
+            To perform the filtering make sure the <b>_filterText</b> value is set with the criteria then
+            execute the <b>ApplyFilter()</b> method on the SortableListView control.
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Constructors</h2>
-          <div id="IDBEASection">
+          <div id="IDCEASection">
             <table id="ConstructorList" class="table is-hoverable">
               <tr>
-                <td>ComboBox</td>
-                <td>Initializes a new instance of the ComboBox class.</td>
+                <td>SortableListView</td>
+                <td>Initializes a new instance of the SortableListView class.</td>
               </tr>
             </table>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Properties</h2>
-          <div id="IDCEASection">
+          <div id="IDGEASection">
             <table id="PropertyList" class="table is-hoverable">
               <tr>
-                <td>IsErrorShown</td>
-                <td>Gets or sets whether error messages are shown to the user below the control.
-                  The default is false.</td>
+                <td>DefaultColumn</td>
+                <td>Gets or sets the default one-based column index.<br />
+                  The default value is 1.</td>
+              </tr>
+              <tr>
+                <td>FilterPredicate</td>
+                <td>Gets or sets the default filter predicate.</td>
+              </tr>
+            </table>
+          </div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
+                class="fa fa-angle-down"></i></span>Methods</h2>
+          <div id="IDDEASection">
+            <table id="MethodList" class="table is-hoverable">
+              <tr>
+                <td>ApplyFilter</td>
+                <td>Applies the filter predicate to the collection view.</td>
+              </tr>
+              <tr>
+                <td>Reset</td>
+                <td>Resets the list view.</td>
+              </tr>
+              <tr>
+                <td>Sort(GridViewColumnHeader)</td>
+                <td>Sorts the list view based on a grid view column header.</td>
+              </tr>
+              <tr>
+                <td>Sort(Int32)</td>
+                <td>Sorts the list view on a one-based column index.</td>
               </tr>
             </table>
           </div>
@@ -163,6 +227,7 @@
               <li><a class="quickLink">Remarks</a></li>
               <li><a class="quickLink">Constructors</a></li>
               <li><a class="quickLink">Properties</a></li>
+              <li><a class="quickLink">Methods</a></li>
             </ul>
           </nav>
         </div>

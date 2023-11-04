@@ -38,7 +38,7 @@
       <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
-          <li><a href="../Controls.htm">Wpf.Controls</a></li>
+          <li><a href="../Controls.htm">Common.Wpf.Controls</a></li>
           <li><p class="has-text-grey">DatePicker</p></li>
         </ul>
       </nav>
@@ -49,6 +49,7 @@
             <ul id="TableOfContents" class="toc-menu">
               <li><a href="ComboBox.htm">ComboBox</a></li>
               <li><b><a href="DatePicker.htm">DatePicker</a></b></li>
+              <li><a href="DialogTypes.htm">DialogTypes</a></li>
               <li><a href="FilePathTextBox.htm">FilePathTextBox</a></li>
               <li><a href="HamburgerMenu.htm">HamburgerMenu</a></li>
               <li><a href="HamburgerMenuItem.htm">HamburgerMenuItem</a></li>
@@ -61,101 +62,90 @@
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Date<wbr />Picker Class</h1>
+          <h1>Date Picker Class</h1>
           <div class="summary">Extension to the System.Windows.Controls.DatePicker class.</div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>Definition</h2>
-          <div id="IDBSection"><strong>Namespace:</strong> <a
-              href="../Controls.htm">Wpf.Controls</a><br /><strong>Assembly:</strong>
-            Common.Wpf.Controls (in Common.Wpf.Controls.dll)<div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button
-                    class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                        class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>Definition</h2>
+          <div id="IDBSection"><p><strong>Namespace:</strong> Common.Wpf.Controls<br />
+            <strong>Assembly: </strong>Common.Wpf.Controls.dll</p>
+            <div class="codeSnippet">
+              <div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons">
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre
-                  xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">DatePicker</span> : <span class="identifier">DatePicker</span></code></pre>
+                  <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">DatePicker</span> : <span class="identifier">System.Windows.Controls.DatePicker</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
               <dt>Inheritance</dt>
-              <dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
-                  rel="noopener noreferrer">Object</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject"
-                  target="_blank" rel="noopener noreferrer">DispatcherObject</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject" target="_blank"
-                  rel="noopener noreferrer">DependencyObject</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.media.visual" target="_blank"
-                  rel="noopener noreferrer">Visual</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.uielement" target="_blank"
-                  rel="noopener noreferrer">UIElement</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement" target="_blank"
-                  rel="noopener noreferrer">FrameworkElement</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.controls.control" target="_blank"
-                  rel="noopener noreferrer">Control</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <a
-                  href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datepicker" target="_blank"
-                  rel="noopener noreferrer">DatePicker</a> <span class="icon is-small"><i
-                    class="fa fa-arrow-right"></i></span> <span class="selflink">DatePicker</span></dd>
+              <dd>
+                <a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
+                 rel="noopener noreferrer">Object</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.threading.dispatcherobject" target="_blank"
+                 rel="noopener noreferrer">DispatcherObject</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.dependencyobject" target="_blank"
+                 rel="noopener noreferrer">DependencyObject</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.media.visual" target="_blank"
+                 rel="noopener noreferrer">Visual</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.uielement" target="_blank"
+                 rel="noopener noreferrer">UIElement</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement" target="_blank"
+                 rel="noopener noreferrer">FrameworkElement</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.control" target="_blank"
+                 rel="noopener noreferrer">Control</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datepicker" target="_blank"
+                 rel="noopener noreferrer">DatePicker</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <span class="selflink">DatePicker</span></dd>
             </dl>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>Remarks</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>Remarks</h2>
           <div id="IDBCSection">
             1. Add a namespace attribute to the root element of the markup file it is to be used in:<br />
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
                   class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+                    class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre
-                  xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">xmlns:cc="clr-namespace:Common.Wpf.Controls;assembly=Common.Wpf.Controls"</code></pre>
               </div>
             </div>
             2. Define the control specifying whether error messages should be shown below the control:<br />
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre
-                  xml:space="preserve"><code class="language-xml">&lt;cc:DatePicker IsErrorShown="True"... /&gt;</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">&lt;cc:DatePicker IsErrorShown="True"... /&gt;</code></pre>
               </div>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>Constructors</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>Constructors</h2>
           <div id="IDBEASection">
             <table id="ConstructorList" class="table is-hoverable">
               <tr>
-                <td><a href="M_Common_Wpf_Controls_DatePicker__ctor.htm">DatePicker</a></td>
-                <td>Initializes a new instance of the DatePicker class.</td>
-              </tr>
+               <td>DatePicker</td>
+               <td>Initializes a new instance of the DatePicker class.</td>
+             </tr>
             </table>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>Properties</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>Properties</h2>
           <div id="IDCEASection">
             <table id="PropertyList" class="table is-hoverable">
               <tr>
-                <td><a href="P_Common_Wpf_Controls_DatePicker_IsErrorShown.htm">IsErrorShown</a></td>
+               <td>IsErrorShown</a></td>
                 <td>Gets or sets whether error messages are shown to the user below the control.
                   The default is false.</td>
-              </tr>
-            </table>
-          </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>Fields</h2>
-          <div id="IDAEASection">
-            <table id="FieldList" class="table is-hoverable">
-              <tr>
-                <td><a href="F_Common_Wpf_Controls_DatePicker_IsErrorShownProperty.htm">IsErrorShownProperty</a></td>
-                <td>Identifies the IsErrorShown dependency property.</td>
               </tr>
             </table>
           </div>
@@ -168,7 +158,6 @@
               <li><a class="quickLink">Remarks</a></li>
               <li><a class="quickLink">Constructors</a></li>
               <li><a class="quickLink">Properties</a></li>
-              <li><a class="quickLink">Fields</a></li>
             </ul>
           </nav>
         </div>
