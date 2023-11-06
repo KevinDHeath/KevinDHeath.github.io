@@ -60,17 +60,13 @@
         <div id="TopicContent" class="column content is-7">
           <h1>Wpf.Themes</h1>
           <div><p>Contains Windows Desktop resources which can be includes in WPF .NET projects.</p></div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>Getting Started</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>Getting Started</h2>
           <div id="IDBABSection">
             <p>To include the resources in a WPF project:</p>
             <ul>
-              <li>
-                <p>Add a reference to the <strong><q>Common.Wpf.Resources</q></strong> assembly or package.</p>
-              </li>
-              <li>
-                <p>Include the required resource dictionaries in the <strong><q>App.xaml</q></strong> file.</p>
-              </li>
+              <li> <p>Add a reference to the <strong><q>Common.Wpf.Resources</q></strong> assembly or package.</p></li>
+              <li><p>Include the required resource dictionaries in the <strong><q>App.xaml</q></strong> file.</p></li>
             </ul>
             <p>The base theme resources are contained in a <strong><q>Common.xaml</q></strong>
               dictionary.<br /><strong>Default font details:</strong> Common.FontFamily,
@@ -81,9 +77,9 @@
             <p>If you need to access any of these directly, and you don’t have the TextBox dictionary included,
               you will need to specify the following:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
                 <pre xml:space="preserve"><code class="language-xml">&lt;ResourceDictionary&gt;
   &lt;ResourceDictionary.MergedDictionaries&gt;
@@ -93,16 +89,16 @@
               </div>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>How To</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>How To</h2>
           <div id="IDCABSection">
             <p>To override any of the default settings for a resource, you can create a custom style and base it
               on a Common style.<br />
               For example, to use 'adornment style' error messages for a Text Box:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
                 <pre xml:space="preserve"><code class="language-xml">&lt;Style x:Key="errorTextBox1" TargetType="{x:Type TextBox}" BasedOn="{StaticResource commonTextBoxStyle}"&gt;
   &lt;Setter Property="Validation.ErrorTemplate" Value="{StaticResource commonErrorItemTemplate}"/&gt;
@@ -110,12 +106,12 @@
               </div>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>See Also</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>See Also</h2>
           <div id="seeAlsoSection">
             <h4>Other Resources</h4>
             <div><a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/styles-templates-overview"
-                target="_blank" rel="noopener noreferrer">Windows Desktop Styles and templates</a></div>
+              target="_blank" rel="noopener noreferrer">Windows Desktop Styles and templates</a></div>
           </div>
         </div>
         <div id="InThisArticleColumn" class="column is-hidden-mobile">
