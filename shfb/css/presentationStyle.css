@@ -46,6 +46,8 @@ html, body {
 }
 */
 
+.last-updated { font-size: smaller; font-style: italic; margin-right: 6px; }
+
 /* Hide the TOC and In This Article columns when printed */
 @media print {
     #ShowHideTOCColumn, #TOCColumn, #InThisArticleColumn {

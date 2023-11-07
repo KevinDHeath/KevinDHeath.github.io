@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/png" href="../../icons/help.png" />
+  <link rel="shortcut icon" type="image/png" href="../../../img/favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="../../css/font-awesome.min.css" />
   <link rel="stylesheet" href="../../css/presentationStyle.css" />
@@ -14,7 +14,7 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>Buttons</title>
+  <title>Button Styles</title>
   <meta name="Title" content="Buttons" />
 </head>
 
@@ -28,9 +28,8 @@
         </div>
         <span id="CurrentLanguage"></span>
         <a class="languageFilterItem" data-languageId="cs"></a>
-        <div class="level-right">
-          <p style="font-size: small; font-style: italic; margin-right: 6px;">Last updated:
-            <script type="text/javascript">fnWriteLastUpdated()</script></p>
+        <div class="level-right last-updated">
+          Last updated: <script type="text/javascript">fnWriteLastUpdated()</script>
         </div>
       </div>
     </div>
@@ -48,18 +47,17 @@
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
               <li><b><a href="Buttons.htm">Buttons</a></b></li>
-              <li><a href="CheckBoxes.htm">Check Boxes</a></li>
-              <li><a href="ComboBoxes.htm">Combo Boxes</a></li>
-              <li><a href="DatePickers.htm">Date Pickers</a></li>
-              <li><a href="ListViews.htm">List Views</a></li>
-              <li><a href="TabControls.htm">Tab Controls</a></li>
-              <li><a href="TextBoxes.htm">Text Boxes</a></li>
+              <li><a href="CheckBoxes.htm">CheckBoxes</a></li>
+              <li><a href="ComboBoxes.htm">ComboBoxes</a></li>
+              <li><a href="DatePickers.htm">DatePickers</a></li>
+              <li><a href="ListViews.htm">ListViews</a></li>
+              <li><a href="TabControls.htm">TabControls</a></li>
+              <li><a href="TextBoxes.htm">TextBoxes</a></li>
             </ul>
           </nav>
         </div>
-        <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Buttons</h1>
+          <h1>Button Styles</h1>
           <div class="summary">
             <p>These styles relate to the Windows Desktop <q>TargetType="{x:Type Button}</q> control class.</p>
           </div>
@@ -99,20 +97,21 @@
               </ul>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>See Also</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>See Also</h2>
           <div id="seeAlsoSection">
             <h4>Other Resources</h4>
             <div><a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.button" target="_blank"
                 rel="noopener noreferrer">Windows Desktop Button Class</a></div>
           </div>
         </div>
-        <div id="InThisArticleColumn" class="column is-hidden-mobile">
-          <nav class="menu sticky is-hidden">
-            <p class="menu-label"><strong>In This Article</strong></p>
+        <div id="InThisArticleColumn" class="column pt-2 is-hidden-mobile">
+          <nav class="card sticky is-hidden">
+            <header class="card-header has-background-grey">
+              <p class="card-header-title has-text-white">In this article</p>
+            </header>
             <ul id="InThisArticleMenu" class="menu-list">
               <li><a class="quickLink">commonButtonStyle</a></li>
-              <li><a class="quickLink">Default properties</a></li>
               <li><a class="quickLink">See Also</a></li>
             </ul>
           </nav>

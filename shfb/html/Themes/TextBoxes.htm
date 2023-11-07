@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/png" href="../../icons/help.png" />
+  <link rel="shortcut icon" type="image/png" href="../../../img/favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="../../css/font-awesome.min.css" />
   <link rel="stylesheet" href="../../css/presentationStyle.css" />
@@ -14,7 +14,7 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>Text Boxes</title>
+  <title>TextBox Styles</title>
   <meta name="Title" content="Text Boxes" />
 </head>
 
@@ -28,9 +28,8 @@
         </div>
         <span id="CurrentLanguage"></span>
         <a class="languageFilterItem" data-languageId="cs"></a>
-        <div class="level-right">
-          <p style="font-size: small; font-style: italic; margin-right: 6px;">Last updated:
-            <script type="text/javascript">fnWriteLastUpdated()</script></p>
+        <div class="level-right last-updated">
+          Last updated: <script type="text/javascript">fnWriteLastUpdated()</script>
         </div>
       </div>
     </div>
@@ -39,7 +38,7 @@
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
           <li><a href="../Themes.htm">Wpf.Themes</a></li>
-          <li><p class="has-text-grey">Text Boxes</p></li>
+          <li><p class="has-text-grey">TextBoxes</p></li>
         </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -48,18 +47,17 @@
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
               <li><a href="Buttons.htm">Buttons</a></li>
-              <li><a href="CheckBoxes.htm">Check Boxes</a></li>
-              <li><a href="ComboBoxes.htm">Combo Boxes</a></li>
-              <li><a href="DatePickers.htm">Date Pickers</a></li>
-              <li><a href="ListViews.htm">List Views</a></li>
-              <li><a href="TabControls.htm">Tab Controls</a></li>
-              <li><b><a href="TextBoxes.htm">Text Boxes</a></b></li>
+              <li><a href="CheckBoxes.htm">CheckBoxes</a></li>
+              <li><a href="ComboBoxes.htm">ComboBoxes</a></li>
+              <li><a href="DatePickers.htm">DatePickers</a></li>
+              <li><a href="ListViews.htm">ListViews</a></li>
+              <li><a href="TabControls.htm">TabControls</a></li>
+              <li><b><a href="TextBoxes.htm">TextBoxes</a></b></li>
             </ul>
           </nav>
         </div>
-        <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Text Boxes</h1>
+          <h1>TextBox Styles</h1>
           <div class="summary">
             <p>These styles relate to the Windows Desktop <q>TargetType="{x:Type TextBlock}</q>
               and <q>TargetType="{x:Type TextBox}</q> control classes.</p>
@@ -67,9 +65,9 @@
           <div>
             <p>Example of adding the resources to an <q>App.xaml</q> file:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
                 <pre xml:space="preserve"><code class="language-xml">&lt;ResourceDictionary&gt;
   &lt;ResourceDictionary.MergedDictionaries&gt;
@@ -79,15 +77,15 @@
               </div>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>commonErrorItemTemplate</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>commonErrorItemTemplate</h2>
           <div id="IDCABSection">
             <p>This can be assigned to any control type as the validation error template.<br />
               Example of assigning the template to a custom Date Picker style:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
                 <pre xml:space="preserve"><code class="language-xml">&lt;Style x:Key="datePickerStyle1" TargetType="{x:Type DatePicker}" BasedOn="{StaticResource commonDatePickerStyle}"&gt;
   &lt;Setter Property="Validation.ErrorTemplate" Value="{StaticResource commonErrorItemTemplate}"/&gt;
@@ -117,14 +115,14 @@
               </ol>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>commonErrorTextBlockStyle</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>commonErrorTextBlockStyle</h2>
           <div id="IDDABSection">
             <p>Example of assigning the style to a Text Block control:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
                 <pre xml:space="preserve"><code class="language-xml">&lt;Grid x:Name="MainGrid" Validation.ErrorTemplate="{x:Null}"&gt;
   ...
@@ -159,14 +157,14 @@
               </ol>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>commonTextBoxEditTemplate</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>commonTextBoxEditTemplate</h2>
           <div id="IDEABSection">
             <p>Example of assigning the template to a custom Text Box style:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
                 <pre xml:space="preserve"><code class="language-xml">&lt;Style x:Key="textBoxStyle1" TargetType="{x:Type TextBox}"&gt;
   &lt;Setter Property="Template" Value="{StaticResource commonTextBoxEditTemplate}"/&gt;
@@ -180,17 +178,16 @@
               </ul>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>commonTextBoxStyle</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>commonTextBoxStyle</h2>
           <div id="IDFABSection">
             <p>Example of assigning the style to a Text Box control:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
-                <pre
-                  xml:space="preserve"><code class="language-xml">&lt;TextBox x:Name="tbName" Style="{StaticResource commonTextBoxStyle}"/&gt;</code></pre>
+                <pre xml:space="preserve"><code class="language-xml">&lt;TextBox x:Name="tbName" Style="{StaticResource commonTextBoxStyle}"/&gt;</code></pre>
               </div>
             </div>
             <h3 class="quickLinkHeader">Default properties</h3>
@@ -201,14 +198,14 @@
               </ul>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>commonTextBoxWithErrorsStyle</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>commonTextBoxWithErrorsStyle</h2>
           <div id="IDGABSection">
             <p>Example of assigning the style to a Text Box control:</p>
             <div class="codeSnippet">
-              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span><button
-                  class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i
-                      class="fa fa-copy"></i></span><span>Copy</span></button></div>
+              <div class="codeHeader"><span class="codeHeaderTitle">XAML</span>
+                <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
+                  <i class="fa fa-copy"></i></span><span>Copy</span></button></div>
               <div class="codePanel hljs">
                 <pre xml:space="preserve"><code class="language-xml">&lt;TextBox x:Name="tbName" Style="{StaticResource commonTextBoxWithErrorsStyle}"/&gt;</code></pre>
               </div>
@@ -235,8 +232,8 @@
               </ol>
             </div>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i
-                class="fa fa-angle-down"></i></span>See Also</h2>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>See Also</h2>
           <div id="seeAlsoSection">
             <h4>Other Resources</h4>
             <div><a href="https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock"
@@ -245,23 +242,17 @@
                 rel="noopener noreferrer">Windows Desktop TextBox Class</a></div>
           </div>
         </div>
-        <div id="InThisArticleColumn" class="column is-hidden-mobile">
-          <nav class="menu sticky is-hidden">
-            <p class="menu-label"><strong>In This Article</strong></p>
+        <div id="InThisArticleColumn" class="column pt-2 is-hidden-mobile">
+          <nav class="card sticky is-hidden">
+            <header class="card-header has-background-grey">
+              <p class="card-header-title has-text-white">In this article</p>
+            </header>
             <ul id="InThisArticleMenu" class="menu-list">
               <li><a class="quickLink">commonErrorItemTemplate</a></li>
-              <li><a class="quickLink">Default properties</a></li>
-              <li><a class="quickLink">Notes</a></li>
               <li><a class="quickLink">commonErrorTextBlockStyle</a></li>
-              <li><a class="quickLink">Default properties</a></li>
-              <li><a class="quickLink">Notes</a></li>
               <li><a class="quickLink">commonTextBoxEditTemplate</a></li>
-              <li><a class="quickLink">Notes</a></li>
               <li><a class="quickLink">commonTextBoxStyle</a></li>
-              <li><a class="quickLink">Default properties</a></li>
               <li><a class="quickLink">commonTextBoxWithErrorsStyle</a></li>
-              <li><a class="quickLink">Default properties</a></li>
-              <li><a class="quickLink">Notes</a></li>
               <li><a class="quickLink">See Also</a></li>
             </ul>
           </nav>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/png" href="../icons/help.png" />
+  <link rel="shortcut icon" type="image/png" href="../../img/favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="../css/font-awesome.min.css" />
   <link rel="stylesheet" href="../css/presentationStyle.css" />
@@ -15,7 +15,7 @@
   <script src="../scripts/presentationStyle.js"></script>
   <script src="../../js/site.js"></script>
   <title>Wpf.Themes</title>
-  <meta name="Title" content="Common.Wpf.Themes" />
+  <meta name="Title" content="Wpf.Themes" />
 </head>
 
 <body>
@@ -28,9 +28,8 @@
         </div>
         <span id="CurrentLanguage"></span>
         <a class="languageFilterItem" data-languageId="cs"></a>
-        <div class="level-right">
-          <p style="font-size: small; font-style: italic; margin-right: 6px;">Last updated:
-            <script type="text/javascript">fnWriteLastUpdated()</script></p>
+        <div class="level-right last-updated">
+          Last updated: <script type="text/javascript">fnWriteLastUpdated()</script>
         </div>
       </div>
     </div>
@@ -47,16 +46,15 @@
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
               <li><a href="Themes/Buttons.htm">Buttons</a></li>
-              <li><a href="Themes/CheckBoxes.htm">Check Boxes</a></li>
-              <li><a href="Themes/ComboBoxes.htm">Combo Boxes</a></li>
-              <li><a href="Themes/DatePickers.htm">Date Pickers</a></li>
-              <li><a href="Themes/ListViews.htm">List Views</a></li>
-              <li><a href="Themes/TabControls.htm">Tab Controls</a></li>
-              <li><a href="Themes/TextBoxes.htm">Text Boxes</a></li>
+              <li><a href="Themes/CheckBoxes.htm">CheckBoxes</a></li>
+              <li><a href="Themes/ComboBoxes.htm">ComboBoxes</a></li>
+              <li><a href="Themes/DatePickers.htm">DatePickers</a></li>
+              <li><a href="Themes/ListViews.htm">ListViews</a></li>
+              <li><a href="Themes/TabControls.htm">TabControls</a></li>
+              <li><a href="Themes/TextBoxes.htm">TextBoxes</a></li>
             </ul>
           </nav>
         </div>
-        <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
           <h1>Wpf.Themes</h1>
           <div><p>Contains Windows Desktop resources which can be includes in WPF .NET projects.</p></div>
@@ -114,9 +112,11 @@
               target="_blank" rel="noopener noreferrer">Windows Desktop Styles and templates</a></div>
           </div>
         </div>
-        <div id="InThisArticleColumn" class="column is-hidden-mobile">
-          <nav class="menu sticky is-hidden">
-            <p class="menu-label"><strong>In This Article</strong></p>
+        <div id="InThisArticleColumn" class="column pt-2 is-hidden-mobile">
+          <nav class="card sticky is-hidden">
+            <header class="card-header has-background-grey">
+              <p class="card-header-title has-text-white">In this article</p>
+            </header>
             <ul id="InThisArticleMenu" class="menu-list">
               <li><a class="quickLink">Getting Started</a></li>
               <li><a class="quickLink">How To</a></li>

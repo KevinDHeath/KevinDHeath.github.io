@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/png" href="../icons/help.png" />
+  <link rel="shortcut icon" type="image/png" href="../../img/favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="../css/font-awesome.min.css" />
   <link rel="stylesheet" href="../css/presentationStyle.css" />
@@ -15,7 +15,7 @@
   <script src="../scripts/presentationStyle.js"></script>
   <script src="../../js/site.js"></script>
   <title>Wpf.Controls</title>
-  <meta name="Title" content="Common.Wpf.Controls" />
+  <meta name="Title" content="Wpf.Controls" />
 </head>
 
 <body>
@@ -28,9 +28,8 @@
         </div>
         <span id="CurrentLanguage"></span>
         <a class="languageFilterItem" data-languageId="cs"></a>
-        <div class="level-right">
-          <p style="font-size: small; font-style: italic; margin-right: 6px;">Last updated:
-            <script type="text/javascript">fnWriteLastUpdated()</script></p>
+        <div class="level-right last-updated">
+          Last updated: <script type="text/javascript">fnWriteLastUpdated()</script>
         </div>
       </div>
     </div>
@@ -38,7 +37,7 @@
       <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
         <ul id="TopicBreadcrumbs">
           <li><a href="../index.html">MVVM WPF</a></li>
-          <li><p class="has-text-grey">Common.Wpf.Controls</p></li>
+          <li><p class="has-text-grey">Wpf.Controls</p></li>
          </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -59,9 +58,8 @@
             </ul>
           </nav>
         </div>
-        <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Common.Wpf.Controls</h1>
+          <h1>Wpf.Controls</h1>
           <div class="summary">Contains classes to create elements, known as controls, that enables a user to interact
             with an application.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
@@ -118,9 +116,11 @@
             </table>
           </div>
         </div>
-        <div id="InThisArticleColumn" class="column is-hidden-mobile">
-          <nav class="menu sticky is-hidden">
-            <p class="menu-label"><strong>In This Article</strong></p>
+        <div id="InThisArticleColumn" class="column pt-2 is-hidden-mobile">
+          <nav class="card sticky is-hidden">
+            <header class="card-header has-background-grey">
+              <p class="card-header-title has-text-white">In this article</p>
+            </header>
             <ul id="InThisArticleMenu" class="menu-list">
               <li><a class="quickLink">Classes</a></li>
               <li><a class="quickLink">Enumerations</a></li>
