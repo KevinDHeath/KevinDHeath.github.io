@@ -14,8 +14,8 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>RelayCommand</title>
-  <meta name="Title" content="RelayCommand" />
+  <title>RuleBase</title>
+  <meta name="Title" content="RuleBase" />
 </head>
 
 <body>
@@ -38,8 +38,8 @@
       <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
-          <li><a href="../Commands.htm">Common.Wpf.Commands</a></li>
-          <li><p class="has-text-grey">RelayCommand</p></li>
+          <li><a href="../Rules.htm">Common.Wpf.Rules</a></li>
+          <li><p class="has-text-grey">RuleBase</p></li>
          </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -47,82 +47,80 @@
         <div id="TOCColumn" class="column is-hidden-mobile">
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
-              <li><a href="DelegateCommand.htm">DelegateCommand</a></li>
-              <li><b><a href="RelayCommand.htm">RelayCommand</a></b></li>
+              <li><a href="IntegerRule.htm">IntegerRule</a></li>
+              <li><a href="RequiredRule.htm">RequiredRule</a></li>
+              <li><b><a href="RuleBase.htm">RuleBase</a></b></li>
             </ul>
           </nav>
-        </div>
+       </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Relay Command Class</h1>
-          <div class="summary">A command whose sole purpose is to relay its functionality to other objects by invoking delegates.</div>
+          <h1>RuleBase Class</h1>
+          <div class="summary">Base class for validation rules.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Definition</h2>
-          <div id="IDBSection"><strong>Namespace:</strong> Common.Wpf.Commands<br />
+          <div id="IDBSection"><strong>Namespace:</strong> Common.Wpf.Rules<br />
             <strong>Assembly:</strong> Common.Wpf.Resources.dll
             <div class="codeSnippet">
               <div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons">
                 <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">RelayCommand</span> : <span class="identifier">ICommand</span></code></pre>
+                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="identifier">RuleBase</span> : <span class="identifier">ValidationRule</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
               <dt>Inheritance</dt>
-              <dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
-                rel="noopener noreferrer">Object</a> <span class="icon is-small">
-                  <i class="fa fa-arrow-right"></i></span> <span class="selflink">RelayCommand</span></dd>
+              <dd>
+                <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>
+                <a href="https://learn.microsoft.com/dotnet/api/system.windows.controls.validationrule" target="_blank" rel="noopener noreferrer">ValidationRule</a>
+                <span class="icon is-small"><i class="fa fa-arrow-right"></i></span> <span class="selflink">RuleBase</span>
+              </dd>
             </dl>
-            <dl class="implementsList">
-              <dt>Implements</dt>
-              <dd><a href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand" target="_blank"
-                rel="noopener noreferrer">ICommand</a></dd>
+            <dl class="inheritanceHierarchy">
+              <dt>Derived</dt>
+              <dd>
+                <div>Common.Wpf.Rules.ComboEditRule</div>
+                <div>Common.Wpf.Rules.DateOnlyRule</div>
+                <div><a href="IntegerRule.htm">Common.Wpf.Rules.IntegerRule</a></div>
+                <div><a href="RequiredRule.htm">Common.Wpf.Rules.RequiredRule</a></div>
+              </dd>
             </dl>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
-            <i class="fa fa-angle-down"></i></span>Constructors</h2>
-          <div id="IDBFASection">
-            <table id="ConstructorList" class="table is-hoverable">
+            <i class="fa fa-angle-down"></i></span>Properties</h2>
+          <div id="IDBEASection">
+            <table id="PropertyList" class="table is-hoverable">
               <tr>
-                <td><a href="RelayCommand_ctor.htm">RelayCommand</a></td>
-                <td>Initializes a new instance of the RelayCommand class.</td>
+                <td>Property</td>
+                <td>Property name being validated.</td>
               </tr>
             </table>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Methods</h2>
-          <div id="IDCFASection">
+          <div id="IDAEASection">
             <table id="MethodList" class="table is-hoverable">
               <tr>
-                <td>CanExecute</td>
-                <td>Defines the method that determines whether the command can execute in its current state.</td>
-              </tr>
-              <tr>
-                <td>Execute</td>
-                <td>Defines the method to be called when the command is invoked.</td>
-              </tr>
-            </table>
-          </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
-            <i class="fa fa-angle-down"></i></span>Events</h2>
-          <div id="IDAFASection">
-            <table id="EventList" class="table is-hoverable">
-              <tr>
-                <td>CanExecuteChanged</td>
-                <td>Occurs when changes occur that affect whether or not the command should execute.</td>
+                <td>Validate</td>
+                <td>Performs validation checks on a value.<br />(Overrides <a
+                    href="https://learn.microsoft.com/dotnet/api/system.windows.controls.validationrule.validate#system-windows-controls-validationrule-validate(system-object-system-globalization-cultureinfo)"
+                     target="_blank" rel="noopener noreferrer">ValidationRule.Validate(Object, CultureInfo)</a>)
+                </td>
               </tr>
             </table>
           </div>
         </div>
-        <div id="InThisArticleColumn" class="column is-hidden-mobile">
-          <nav class="menu sticky is-hidden">
-            <p class="menu-label"><strong>In This Article</strong></p>
+        <div id="InThisArticleColumn" class="column pt-2 is-hidden-mobile">
+          <nav class="card sticky is-hidden">
+            <header class="card-header has-background-grey">
+              <p class="card-header-title has-text-white">In this article</p>
+            </header>
             <ul id="InThisArticleMenu" class="menu-list">
               <li><a class="quickLink">Definition</a></li>
-              <li><a class="quickLink">Constructors</a></li>
+              <li><a class="quickLink">Properties</a></li>
               <li><a class="quickLink">Methods</a></li>
-              <li><a class="quickLink">Events</a></li>
             </ul>
           </nav>
         </div>

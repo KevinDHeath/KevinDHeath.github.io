@@ -14,8 +14,8 @@
   <script src="../../scripts/highlight.min.js"></script>
   <script src="../../scripts/presentationStyle.js"></script>
   <script src="../../../js/site.js"></script>
-  <title>RelayCommand</title>
-  <meta name="Title" content="RelayCommand" />
+  <title>ConverterBase</title>
+  <meta name="Title" content="ConverterBase" />
 </head>
 
 <body>
@@ -38,8 +38,8 @@
       <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
         <ul id="TopicBreadcrumbs">
           <li><a href="../../index.html">MVVM WPF</a></li>
-          <li><a href="../Commands.htm">Common.Wpf.Commands</a></li>
-          <li><p class="has-text-grey">RelayCommand</p></li>
+          <li><a href="../Converters.htm">Common.Wpf.Converters</a></li>
+          <li><p class="has-text-grey">ConverterBase</p></li>
          </ul>
       </nav>
       <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
@@ -47,15 +47,14 @@
         <div id="TOCColumn" class="column is-hidden-mobile">
           <nav class="toc">
             <ul id="TableOfContents" class="toc-menu">
-              <li><a href="DelegateCommand.htm">DelegateCommand</a></li>
-              <li><b><a href="RelayCommand.htm">RelayCommand</a></b></li>
+              <li><b><a href="ConverterBase.htm">ConverterBase</a></b></li>
             </ul>
           </nav>
         </div>
         <div id="Resizer" class="is-hidden"></div>
         <div id="TopicContent" class="column content is-7">
-          <h1>Relay Command Class</h1>
-          <div class="summary">A command whose sole purpose is to relay its functionality to other objects by invoking delegates.</div>
+          <h1>Converter Base Class</h1>
+          <div class="summary">Base class for IValueConverter converters.</div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Definition</h2>
           <div id="IDBSection"><strong>Namespace:</strong> Common.Wpf.Commands<br />
@@ -65,64 +64,55 @@
                 <button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small">
                   <i class="fa fa-copy"></i></span><span>Copy</span></button></span></div>
               <div class="codePanel hljs">
-                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">RelayCommand</span> : <span class="identifier">ICommand</span></code></pre>
+                <pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="identifier">ConverterBase</span> : <span class="identifier">IValueConverter</span></code></pre>
               </div>
             </div>
             <dl class="inheritanceHierarchy">
               <dt>Inheritance</dt>
-              <dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank"
-                rel="noopener noreferrer">Object</a> <span class="icon is-small">
-                  <i class="fa fa-arrow-right"></i></span> <span class="selflink">RelayCommand</span></dd>
+              <dd>
+                <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank"
+                 rel="noopener noreferrer">Object</a>
+                <span class="icon is-small"> <i class="fa fa-arrow-right"></i></span> <span class="selflink">ConverterBase</span>
+              </dd>
+            </dl>
+            <dl class="inheritanceHierarchy">
+              <dt>Derived</dt>
+              <dd>
+                <div>Common.Wpf.Converters.DateOnlyToDateTime</div>
+                <div>Common.Wpf.Converters.DecimalToString</div>
+                <div>Common.Wpf.Converters.IntegerToString</div>
+                <div>Common.Wpf.Converters.StringToDateTime</div>
+              </dd>
             </dl>
             <dl class="implementsList">
               <dt>Implements</dt>
-              <dd><a href="https://learn.microsoft.com/dotnet/api/system.windows.input.icommand" target="_blank"
-                rel="noopener noreferrer">ICommand</a></dd>
+              <dd><a href="https://learn.microsoft.com/dotnet/api/system.windows.data.ivalueconverter" target="_blank"
+                rel="noopener noreferrer">IValueConverter</a></dd>
             </dl>
           </div>
           <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
-            <i class="fa fa-angle-down"></i></span>Constructors</h2>
-          <div id="IDBFASection">
-            <table id="ConstructorList" class="table is-hoverable">
-              <tr>
-                <td><a href="RelayCommand_ctor.htm">RelayCommand</a></td>
-                <td>Initializes a new instance of the RelayCommand class.</td>
-              </tr>
-            </table>
-          </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
             <i class="fa fa-angle-down"></i></span>Methods</h2>
-          <div id="IDCFASection">
+          <div id="IDAFASection">
             <table id="MethodList" class="table is-hoverable">
               <tr>
-                <td>CanExecute</td>
-                <td>Defines the method that determines whether the command can execute in its current state.</td>
+                <td><a href="ConverterBase_Convert.htm">Convert</a></td>
+                <td>Converts the binding source to target.</td>
               </tr>
               <tr>
-                <td>Execute</td>
-                <td>Defines the method to be called when the command is invoked.</td>
-              </tr>
-            </table>
-          </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
-            <i class="fa fa-angle-down"></i></span>Events</h2>
-          <div id="IDAFASection">
-            <table id="EventList" class="table is-hoverable">
-              <tr>
-                <td>CanExecuteChanged</td>
-                <td>Occurs when changes occur that affect whether or not the command should execute.</td>
+                <td><a href="ConverterBase_ConvertBack.htm">ConvertBack</a></td>
+                <td>Converts the binding target back to source.</td>
               </tr>
             </table>
           </div>
         </div>
-        <div id="InThisArticleColumn" class="column is-hidden-mobile">
-          <nav class="menu sticky is-hidden">
-            <p class="menu-label"><strong>In This Article</strong></p>
+        <div id="InThisArticleColumn" class="column pt-2 is-hidden-mobile">
+          <nav class="card sticky is-hidden">
+            <header class="card-header has-background-grey">
+              <p class="card-header-title has-text-white">In this article</p>
+            </header>
             <ul id="InThisArticleMenu" class="menu-list">
               <li><a class="quickLink">Definition</a></li>
-              <li><a class="quickLink">Constructors</a></li>
               <li><a class="quickLink">Methods</a></li>
-              <li><a class="quickLink">Events</a></li>
             </ul>
           </nav>
         </div>

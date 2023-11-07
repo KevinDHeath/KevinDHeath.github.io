@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="../icons/help.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/presentationStyle.css" />
+  <link rel="stylesheet" href="../css/vs.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery.min.js@3.5.1/jquery.min.js"></script>
+  <script src="../scripts/clipboard.min.js"></script>
+  <script src="../scripts/highlight.min.js"></script>
+  <script src="../scripts/presentationStyle.js"></script>
+  <script src="../../js/site.js"></script>
+  <title>Wpf.Rules</title>
+  <meta name="Title" content="Common.Wpf.Rules" />
+</head>
+
+<body>
+  <div class="fixedLayout">
+    <div id="Header" class="fixedHeader">
+      <div class="pageHeader level mb-0 has-background-black">
+        <div class="level-left">
+          <div class="level-item"><img src="../icons/help.png" style="max-height: 40px" class="py-2 px-2">
+            Common Components</div>
+        </div>
+        <span id="CurrentLanguage"></span>
+        <a class="languageFilterItem" data-languageId="cs"></a>
+        <div class="level-right">
+          <p style="font-size: small; font-style: italic; margin-right: 6px;">Last updated:
+            <script type="text/javascript">fnWriteLastUpdated()</script></p>
+        </div>
+      </div>
+    </div>
+    <div class="fixedContent">
+      <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+        <ul id="TopicBreadcrumbs">
+          <li><a href="../index.html">MVVM WPF</a></li>
+          <li><p class="has-text-grey">Common.Wpf.Rules</p></li>
+         </ul>
+      </nav>
+      <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+        <div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div>
+        <div id="TOCColumn" class="column is-hidden-mobile">
+          <nav class="toc">
+            <ul id="TableOfContents" class="toc-menu">
+              <li><a href="Rules/IntegerRule.htm">IntegerRule</a></li>
+              <li><a href="Rules/RequiredRule.htm">RequiredRule</a></li>
+              <li><a href="Rules/RuleBase.htm">RuleBase</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="Resizer" class="is-hidden"></div>
+        <div id="TopicContent" class="column content is-7">
+          <h1>Common.Wpf.Rules</h1>
+          <div class="summary">Contains classes to validate the WPF user interface elements.</div>
+          <h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0">
+            <i class="fa fa-angle-down"></i></span>Classes</h2>
+          <div id="IDACASection">
+            <table id="classList" class="table is-hoverable">
+              <tr>
+                <td>ComboEditRule</td>
+                <td>Validation rule for editable combo boxes.</td>
+              </tr>
+              <tr>
+                <td>DateOnlyRule</td>
+                <td>Validation rule for date only values.</td>
+              </tr>
+              <tr>
+                <td><a href="Rules/IntegerRule.htm">IntegerRule</a></td>
+                <td>Validation rule for integer values with an optional minimum and maximum range.</td>
+              </tr>
+              <tr>
+                <td><a href="Rules/RequiredRule.htm">RequiredRule</a></td>
+                <td>
+                  Validation rule for required values, with no leading or trailing blanks, and an optional
+                  minimum number of characters.
+                </td>
+              </tr>
+              <tr>
+                <td><a href="TRules/RuleBase.htm">RuleBase</a></td>
+                <td>Base class for validation rules.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="InThisArticleColumn" class="column pt-2 is-hidden-mobile">
+          <nav class="card sticky is-hidden">
+            <header class="card-header has-background-grey">
+              <p class="card-header-title has-text-white">In this article</p>
+            </header>
+            <ul id="InThisArticleMenu" class="menu-list">
+              <li><a class="quickLink">Classes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+      </div>
+    </footer>
+  </div>
+  <script>$(function () {
+    SetDefaultLanguage("cs");
+    LoadTocFile(null, null);
+    InitializeQuickLinks();
+    $(".toggleSection").click(function () {
+      SectionExpandCollapse(this);
+    });
+    $(".toggleSection").keypress(function () {
+      SectionExpandCollapseCheckKey(this, event)
+    });
+  });</script>
+</body>
+
+</html>
