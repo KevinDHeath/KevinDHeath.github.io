@@ -1,2 +1,4 @@
 .last-updated { font-size: smaller; font-style: italic; margin-right: 6px; }
 .article-item { line-height: .75; }
+.table td.thin { padding-top: 0em; padding-bottom: 0em; }
+.codeHeader { background-color: #87CEFA; }
