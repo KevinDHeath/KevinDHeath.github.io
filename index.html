@@ -3,16 +3,20 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <script src="js/site.js"></script>
   <title>Kevin D. Heath</title>
   <base target="_blank">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style type="text/css">
+    body.space-theme { background-image: url("mainsite/images/spacebk.gif"); min-height: 100svh; }
+    .card-header { background-color: #66cc; }
+  </style>
 </head>
 
-<body>
-  <div class="fixedHeader has-text-white has-background-black">
+<body class="space-theme">
+  <div class="fixedHeader has-text-white">
     <div class="pageHeader level mb-0">
       <div class="level-left">
         <a class="level-item" href="./mainsite/index.html" target="_self">
@@ -31,7 +35,7 @@
       <div class="columns mt-1 is-multiline">
         <div class="column is-6-tablet is-5-desktop">
           <div class="card">
-            <header class="card-header has-background-black">
+            <header class="card-header">
               <p class="card-header-title has-text-white">Documentation</p>
             </header>
             <div class="card">
@@ -49,7 +53,7 @@
         </div>
         <div class="column is-6-tablet is-5-desktop">
           <div class="card">
-            <header class="card-header has-background-black">
+            <header class="card-header">
               <p class="card-header-title has-text-white">Source Code</p>
             </header>
             <div class="card">

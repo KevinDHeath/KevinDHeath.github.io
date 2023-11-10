@@ -5,7 +5,7 @@
 /mainsite/reddwarf/scripts
 Web.config
 /PrecompiledWeb
-/.sarif
+/.vscode
 
 # User-specific files
 *.suo
