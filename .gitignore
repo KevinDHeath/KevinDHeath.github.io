@@ -6,6 +6,7 @@
 Web.config
 /PrecompiledWeb
 /.vscode
+Notes*.txt
 
 # User-specific files
 *.suo

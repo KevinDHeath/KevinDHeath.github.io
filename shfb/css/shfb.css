@@ -1,6 +1,6 @@
 @import "./bulma.min.css";
 @import "./font-awesome.min.css";
-@import "./vs.min.cs";
+@import "./vs.min.css";
 @import "./presentationStyle.css";
 
 .last-updated { font-size: smaller; font-style: italic; margin-right: 6px; }
