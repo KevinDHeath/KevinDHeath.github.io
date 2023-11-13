@@ -3,7 +3,7 @@
 
 # Private exclude files
 /mainsite/reddwarf/scripts
-Web.config
+# Web.config
 /PrecompiledWeb
 /.vscode
 Notes*.txt
