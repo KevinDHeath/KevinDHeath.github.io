@@ -3,7 +3,7 @@
 
 # Private exclude files
 .vscode
-Notes*.txt
+Notes*.*
 /mainsite/reddwarf/scripts
 
 # User-specific files

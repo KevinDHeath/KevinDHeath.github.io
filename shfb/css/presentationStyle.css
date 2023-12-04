@@ -1,4 +1,5 @@
-﻿/* Fixed layout settings.  Disabled for now.  If enabled, the In This Article section doesn't stick to the top.
+﻿
+/* Fixed layout settings.  Disabled for now.  If enabled, the In This Article section doesn't stick to the top.
 html, body {
     height: 100%;
     overflow: hidden;
@@ -419,3 +420,9 @@ sup.citation a:link a:visited a:active {
 .toc-resizable-content {
     flex-grow: 1;
 }
+
+/* My modifications */
+.codeHeader { background-color: #87CEFA; }
+.menu-label { background-color: #FF8C00; padding: 5pt; }
+.quickLink { line-height: .75; }
+.table td.thin { padding-top: 0em; padding-bottom: 0em; }
