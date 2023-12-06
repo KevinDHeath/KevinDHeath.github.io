@@ -1,5 +1,6 @@
 # KevinDHeath.github.io
-Modified SandCastle Help File Builder (SHFB) presentationStyle.css
+
+Modify Sandcastle Help File Builder (SHFB) presentationStyle.css
 ~~~
 /* My modifications */
 .codeHeader { background-color: #87CEFA; } /* LightSkyBlue */
@@ -8,8 +9,8 @@ Modified SandCastle Help File Builder (SHFB) presentationStyle.css
 .table td.thin { padding-top: 0em; padding-bottom: 0em; }
 ~~~
 
-## Updating SandCastle Builds
-1. Build NuGetPackages SandCastle projects.
+## Updating Sandcastle Builds
+1. Build NuGetPackages Sandcastle projects.
 2. Overwrite folders `.\css`, `.\icons`, and `.\html` with modified files.
 3. Test results locally.
 4. Clear `.\nuget` or `.\shfb` folders.
@@ -17,8 +18,10 @@ Modified SandCastle Help File Builder (SHFB) presentationStyle.css
 6. Push changes which will deploy the updated files to the GitHub Pages site.
 
 ## HTML Modifications
+The following pages need to be updated after a rebuild of the NuGetPackages.shfbproj
+or WpfPackages.shfbproj projects.
 
-### shfb Folder
+### WpfPackages (shfb folder)
 Start page: **9488fab8-02de-4046-a582-c44f4c2a945f.htm**
 ~~~
 <h1>Introduction</h1>
@@ -42,7 +45,7 @@ Themes page: **e6e60a0c-f708-479e-bc65-bcdc99253c7b.htm**
    <td class="thin is-info"> (for sub-headings)
 ~~~
 
-### nuget Folder
+### NuGetPackages (nuget folder)
 Start page: **R_Project_NuGetPackages.htm**
 ~~~
 <h1>Introduction</h1>
