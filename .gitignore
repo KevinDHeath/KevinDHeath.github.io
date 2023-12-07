@@ -5,6 +5,7 @@
 .vscode
 Notes*.*
 /mainsite/reddwarf/scripts
+*-prev*.*
 
 # User-specific files
 *.suo
