@@ -1,19 +1,14 @@
-﻿body {
-  background-color: black;
+﻿@import "bulma.css";
+
+html, body {
+  background-color: hsl(0, 0%, 4%);
   color: white;
   font: 12pt Verdana, Arial, Helvetica, sans-serif;
 }
+.space-theme { background-image: url("../mainsite/img/space.gif"); min-height: 100svh; }
+.card-header { background-color: #0066cc; }
 
-a {
-  color: #8ab4f8;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:visited {
-  color: #c58af9;
-}
+a, a:hover { color: yellow; } a:hover { text-decoration: underline; } a:visited { color: orange; }
 
 td {
   vertical-align: top;
