@@ -1,12 +1,15 @@
 @import "../css/site.css";
 
+.center { display: block; margin-left: auto; margin-right: auto; }
 .comment { border: 1pt solid; padding: 6pt; min-width: 80pt; }
 .comment-text {color: yellow; font-weight: bolder;}
-.center { display: block; margin-left: auto; margin-right: auto; }
-.smaller { font-size: smaller; margin-left: 5pt; }
+.smaller { font-size: smaller; }
 
 .transparent-background { background-color: hsla(0, 0%, 4%, 0.0); }
 
+small { color: #FFFFFF; font-size: 10pt; }
+
+/* Old Styles */
 P {
   color: #FFFFFF;
   font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -39,12 +42,6 @@ H2 {
   font-family: Verdana, Arial;
   font-size: 10pt;
   font-weight: bold;
-}
-SMALL {
-  color: #FFFFFF;
-  font-size: 8pt;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-weight: normal
 }
 UL.small {
   font-size: 10pt;
