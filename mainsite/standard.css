@@ -5,47 +5,6 @@
 .comment-text {color: yellow; font-weight: bolder;}
 .smaller { font-size: smaller; }
 
-.transparent-background { background-color: hsla(0, 0%, 4%, 0.0); }
-
 small { color: #FFFFFF; font-size: 10pt; }
 
-/* Old Styles */
-P {
-  color: #FFFFFF;
-  font-family: Arial, Verdana, Helvetica, sans-serif;
-}
-P.alt {
-  color: #FFFFFF;
-  font-family: Comic Sans MS, Verdana, Arial, Helv;
-  font-size: 12pt;
-}
-TD {
-  color: #FFFFFF;
-  font-family: Verdana, Arial;
-}
-TD.banner {
-  color: #C0C0C0;
-  font-family: Arial, helv;
-  font-size: 8pt;
-  font-style: italic;
-}
-TD.outline {
-  border-color: #808000;
-}
-H1 {
-  color: #FFFF00;
-  font-family: Arial;
-  font-size: 12pt;
-  font-weight: bold;
-}
-H2 {
-  font-family: Verdana, Arial;
-  font-size: 10pt;
-  font-weight: bold;
-}
-UL.small {
-  font-size: 10pt;
-}
-HR {
-  color: #808000;
-}
+.transparent-background { background-color: hsla(0, 0%, 4%, 0.0); }

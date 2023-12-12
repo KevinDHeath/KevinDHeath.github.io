@@ -5,7 +5,3 @@ a, a:hover { color: #FFFF00; } a:hover { text-decoration: underline; } a:visited
 td { vertical-align: top; }
 .space-theme { background-image: url("../mainsite/img/space.gif"); min-height: 100svh; }
 .card-header { background-color: #0066cc; }
-
-/* Old Styles */
-td.profile { padding-right: 40px; }
-td.updated { font-size: 9pt; font-style: italic; width: 100%; text-align: right; }
