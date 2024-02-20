@@ -1,4 +1,4 @@
-These are changes that need to be performed before pushing new builds to the web.
+These are changes that need to be performed before pushing new builds to the GitHub Pages.
 
 # Report Generator Code Coverage
 <details><summary>Build process</summary>
@@ -12,11 +12,11 @@ reportgenerator -reports:TestResults\*\coverage.cobertura.xml -targetdir:TestRes
 reportgenerator -reports:TestResults\*\coverage.cobertura.xml -targetdir:TestResults\reports -reporttypes:MarkdownSummaryGithub
 reportgenerator -reports:TestResults\*\coverage.cobertura.xml -targetdir:TestResults\reports\badges -reporttypes:Badges -verbosity:Warning
 ```
-2. Copy the contents of `TestResults\reports\html` to the _codecoverage_ `html` folder.
-3. Modify the `index.html` file to remove the unwanted elements _(see next section)_.
-4. Copy the following badge files from `TestResults\reports\badges` to the _codecoverage_ `root` folder:\
+2. Update the `README.md` file for the project with the contents from `TestResults\reports\SummaryGithub.md`.
+3. Copy the following badge files from `TestResults\reports\badges` to the _codecoverage_ `root` folder:\
 `badge_branchcoverage.svg, badge_combined.svg, badge_linecoverage.svg, badge_methodcoverage.svg`
-5. Update the `README.md` file for the project with the contents from `TestResults\reports\SummaryGithub.md`.
+4. Copy the contents of `TestResults\reports\html` to the _codecoverage_ `html` folder.
+5. Modify the `index.html` file to remove the unwanted elements _(see next section)_.
 6. Pushing changes will deploy the updated files to the GitHub Pages site.
 
 </details>
