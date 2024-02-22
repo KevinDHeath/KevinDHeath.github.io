@@ -55,11 +55,10 @@ reportgenerator -reports:TestResults\*\coverage.cobertura.xml -targetdir:TestRes
 <details><summary>Build process</summary>
 
 1. Build the NuGetPackages Sandcastle projects from the `docs` folder.
-2. Overwrite the `C\Temp\Documentation` sub-folders `.\css`, `.\html`, and `.\icons` with the modified files.
+2. Run the `ArtifactsCopy.ps1` script to overlay the modified files.
 3. Test results locally.
-4. Clear `.\nuget` or `.\shfb` folders.
-5. Copy all files from the `C\Temp\Documentation` sub-folders to the `nuget` or `shfb` folders.
-6. Pushing changes will deploy the updated files to the GitHub Pages site.
+4. Run the `PrepareRelease.ps1` script for `nuget` or `shfb` to copy the files ready for deployment.
+5. Pushing changes will deploy the updated files to the GitHub Pages site.
 
 </details>
 
