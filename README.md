@@ -65,7 +65,7 @@ These are the tasks that need to be performed before pushing new releases to Git
 </details>
 
 </details>
-&nbsp;
+
 <details><summary>Generate code coverage reports</summary>
 
 1. Run the following `powershell` commands from the Unit Test project directories to generate
