@@ -68,18 +68,17 @@ These are the tasks that need to be performed before pushing new releases to Git
 
 <details><summary>Generate code coverage reports</summary>
 
-1. Run the following `powershell` commands from the Unit Test project directories to generate
+1. Run the following `powershell` commands from the test>Unit directory to generate
 the coverage reports with history.\
 _(__Important:__ This will create a new *CoverageHistory.xml file)_
 ```shell
-dotnet test --collect:"XPlat Code Coverage" --configuration Testing
-reportgenerator -reports:TestResults\*\coverage.cobertura.xml -targetdir:TestResults\reports\html -historydir:Testdata\history
-reportgenerator -reports:TestResults\*\coverage.cobertura.xml -targetdir:TestResults\reports -reporttypes:MarkdownSummaryGithub
-reportgenerator -reports:TestResults\*\coverage.cobertura.xml -targetdir:TestResults\reports\badges -reporttypes:Badges -verbosity:Warning
+.\RunTests.ps1
+reportgenerator -reports:TestResults\core\*\coverage.cobertura.xml -title:Core.Tests -historydir:Core.Tests\Testdata\history -targetdir:TestResults\core\reports\html
+reportgenerator -reports:TestResults\helper\*\coverage.cobertura.xml -title:Helper.Tests -historydir:Helper.Tests\Testdata\history -targetdir:TestResults\helper\reports\html
 ```
-2. Update the `README.md` files for the projects with the contents from `TestResults\reports\SummaryGithub.md`
-3. Run the `PrepareReports.ps1` script to copy the files ready for deployment.
-4. Modify the `index.html` files to remove the unwanted elements _(see next section)_.
+2. Run the `PrepareReports.ps1` script to copy the files ready for deployment.
+3. Modify the `index.html` files to remove the unwanted elements _(see next section)_.
+4. Update the `README.md` files for the projects with the contents from `TestResults\[core|helper]\reports\SummaryGithub.md`
 
   <details><summary>HTML Modifications</summary>
 
