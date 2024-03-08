@@ -15,14 +15,17 @@ function Copy_Reports {
   # Check the reports folder exist
   if( !(Test-Path "$rptPath") ) { Write-Host "Reports folder $rptPath does not exist." -ForegroundColor Red ; Return }
   $destPath = "$target\codecoverage\$folder"
-  
+
   Write-Host "Copying report from: $rptPath"
-  Copy-Item -Path "$rptPath\*" -Destination "$destPath" -Recurse -ErrorAction SilentlyContinue
-  Remove-Item "$destPath\*.md" | Out-Null
+  Copy-Item -Path "$rptPath\Html\*.*" -Destination "$destPath\html" -ErrorAction SilentlyContinue
+  Copy-Item -Path "$rptPath\Badges\badge_branchcoverage.svg" -Destination "$destPath"
+  Copy-Item -Path "$rptPath\Badges\badge_combined.svg" -Destination "$destPath"
+  Copy-Item -Path "$rptPath\Badges\badge_linecoverage.svg" -Destination "$destPath"
+  Copy-Item -Path "$rptPath\Badges\badge_methodcoverage.svg" -Destination "$destPath"
 
   # Reset archive attribute on all copied files
   Get-ChildItem -Path "$destPath\" -Recurse -File -Include "*.*" | Where-Object {
-    ($_.Attributes -band [IO.FileAttributes]::Archive) } | ForEach-Object { $_.Attributes += 'Archive' };
+   ($_.Attributes -band [IO.FileAttributes]::Archive) } | ForEach-Object { $_.Attributes += 'Archive' };
 }
 
 # Perform tasks  
