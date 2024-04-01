@@ -3,7 +3,7 @@
 # Set variables
 $root = (Get-ChildItem Env:USERPROFILE).Value + '\source\repos\github'
 $target = "$root\KevinDHeath.github.io"
-$report = "$root\NuGetPackages\test\Unit\TestResults\[]\reports"
+$report = "$root\NuGetPackages\tests\Unit\TestResults\[]\reports"
 
 # Check the target folder exist
 if( !(Test-Path "$target\$project") ) { Write-Host "Target folder $target\$project does not exist." -ForegroundColor Red; Exit }
