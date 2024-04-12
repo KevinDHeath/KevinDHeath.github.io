@@ -297,21 +297,21 @@ span.keyword {
     }
 
 /* Glossary styles */
-div.glossaryDiv {
-}
+/* div.glossaryDiv {
+} */
 
-div.glossaryLetterBar {
-}
+/* div.glossaryLetterBar {
+} */
 
-hr.glossaryRule {
-}
+/* hr.glossaryRule {
+} */
 
 h3.glossaryGroupHeading {
     color: #808080;
 }
 
-div.glossaryGroup {
-}
+/* div.glossaryGroup {
+} */
 
 dl.glossaryGroupList {
     margin: 0;
@@ -340,8 +340,8 @@ span.bibliographyTitle {
     font-style: italic;
 }
 
-span.bibliographyPublisher {
-}
+/* span.bibliographyPublisher {
+} */
 
 sup.citation a:link a:visited a:active {
     text-decoration: none;
@@ -422,6 +422,12 @@ sup.citation a:link a:visited a:active {
 
 /* My modifications */
 .codeHeader { background-color: #87CEFA; }
+.codePanel { padding: 4px; }
 .menu-label { background-color: #FF8C00; padding: 5pt; }
+.menu-label strong { color: black; }
 .quickLink { line-height: .75; }
 .table td.thin { padding-top: 0em; padding-bottom: 0em; }
+.toc-menu a {color: #A9A9A9;}
+body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+pre code.hljs { background-color: #FFF8DC; }
+.content span.selflink { color: #1E90FF; }
