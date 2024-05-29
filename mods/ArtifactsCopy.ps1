@@ -20,3 +20,4 @@ function Copy_HtmlArtifacts {
 
 Copy_HtmlArtifacts  'nuget' "$iconPath\icon-blue.ico"
 Copy_HtmlArtifacts  'shfb' "$iconPath\icon-blue.ico"
+Copy_HtmlArtifacts  'grassscore' "$iconPath\grass-score.ico"
