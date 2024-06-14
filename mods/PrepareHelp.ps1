@@ -1,7 +1,8 @@
 # Script to prepare the help documentation for a release
 param ([Parameter(Mandatory=$true)][string]$project)
 $project = $project.ToLower()
-if( !($project -eq 'nuget') -And !($project -eq 'shfb') ) { Write-Host "Parameter must equal nuget or shfb" -ForegroundColor Red; Exit }
+if( !($project -eq 'grassscore') -And !($project -eq 'nuget') -And !($project -eq 'shfb') )
+{ Write-Host "Parameter must equal grassscore, nuget, or shfb" -ForegroundColor Red; Exit }
 
 # Set variables
 $source = 'C:\Temp\Documentation'

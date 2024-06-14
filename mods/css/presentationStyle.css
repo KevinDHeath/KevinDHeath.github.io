@@ -421,6 +421,7 @@ sup.citation a:link a:visited a:active {
 }
 
 /* My modifications */
+.glossaryEntry {color: #A9A9A9;}
 .codeHeader { background-color: #87CEFA; }
 .codePanel { padding: 4px; }
 .menu-label { background-color: #FF8C00; padding: 5pt; }
