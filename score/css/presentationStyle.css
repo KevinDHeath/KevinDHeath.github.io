@@ -431,3 +431,4 @@ sup.citation a:link a:visited a:active {
 body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 pre code.hljs { background-color: #FFF8DC; }
 .content span.selflink { color: #1E90FF; }
+.glossaryEntry {color: #A9A9A9;}
