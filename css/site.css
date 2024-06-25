@@ -1,7 +1,7 @@
-﻿@import "bulma.css";
+﻿@import "./bulma/v100/bulma.min.css";
 
 html, body { background-color: hsl(0, 0%, 4%); color: hsl(0, 0%, 100%); font: 11pt Verdana, Arial, Helvetica, sans-serif; }
 a, a:hover { color: #FFFF00; } a:hover { text-decoration: underline; } a:visited { color: #FFA500; }
 td { vertical-align: top; }
-.space-theme { background-image: url("../mainsite/img/space.gif"); min-height: 100svh; }
+.space-theme { background-image: url("../img/space.gif"); min-height: 100svh; }
 .card-header { background-color: #0066cc; }
