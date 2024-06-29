@@ -2,6 +2,7 @@
 ## https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 .vscode
 mainsite/reddwarf/scripts
+tools/*.txt
 
 # Bulma v1.0.0 (v0.9.3 used by shfb but v1.0.0 does work)
 css/bulma/v093
@@ -18,6 +19,6 @@ css/font-awesome/v652
 nuget/webfonts/
 shfb/webfonts/
 score/webfonts/
-*/css/ja-*
+**/css/ja-*
 **/css/ko-*
 **/css/zh-*
