@@ -1,28 +1,20 @@
+var hands;  // Number of hands completed (var hands = 0;)
+var winner; // Game completed (var winner = false;)
+
 function initializePage()
 {
-  var now = new Date();
-  var datestring = now.getMonthName() + " " + now.getDate() + ", " + now.getFullYear();
-  document.getElementById("datetime").innerHTML = datestring; // Insert date into HTML
-  showScoreCards();
-}
-
-function checkInPlay()
-{
-  $("#inHand").toggleClass("is-hidden");     // Hide in-hand
-  $("#inHandLink").toggleClass("is-hidden"); // Hide quick link
+  if( hands === null || typeof(hands) === "undefined" ) hands = 0; // Default is 1st hand
   showScoreCards();
 
-  var inPlay = document.getElementById("inPlay"); // Set button text
-  if( inPlay === null || typeof(inPlay) === "undefined") return;
-  var inHand = document.getElementById("inHand");
-  if(inHand.classList.contains("is-hidden")) { inPlay.innerHTML = "Show hand"; } else { inPlay.innerHTML = "Hide hand"; }
+  if( winner === null || typeof(winner) === "undefined" ) winner = false; // Default is active
+  showInPlayButton()
 }
 
 function showScoreCards()
 {
   var scoreCards = document.getElementById("scoreCards");
   var scoreCardLink = document.getElementById("scoreCardsLink");
-  if(round === 1) // Hide score cards
+  if( hands === 0 ) // Hide score cards
   {
      if(!scoreCards.classList.contains("is-hidden")) { scoreCards.classList.add("is-hidden"); }
      if(!scoreCardLink.classList.contains("is-hidden")) { scoreCardLink.classList.add("is-hidden"); }
@@ -34,9 +26,29 @@ function showScoreCards()
   }
 }
 
-// Make Date provide month full names
-Date.prototype.getMonthName = function() 
+function showInPlayButton()
 {
-  var month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  return month_names[this.getMonth()];
+  var showInPlay = document.getElementById("showInPlay");
+  if( showInPlay === null || typeof(showInPlay) === "undefined") return;
+  if( winner === true ) // Hide in play button
+  {
+     if( !showInPlay.classList.contains("is-hidden")) { showInPlay.classList.add("is-hidden"); }
+     $("#inHand").toggleClass("is-hidden");     // Show in-hand
+     $("#inHandLink").toggleClass("is-hidden"); // Show quick link
+  }
+  else // Show in play button
+  {
+     if( showInPlay.classList.contains("is-hidden")) { showInPlay.classList.remove("is-hidden"); }
+  }
+}
+
+function toggleInPlay()
+{
+  $("#inHand").toggleClass("is-hidden");
+  $("#inHandLink").toggleClass("is-hidden");
+
+  var inPlay = document.getElementById("inPlay"); // Set button text
+  if( inPlay === null || typeof(inPlay) === "undefined") return;
+  var inHand = document.getElementById("inHand");
+  if( inHand.classList.contains("is-hidden") ) { inPlay.innerHTML = "Show in hand"; } else { inPlay.innerHTML = "Hide in hand"; }
 }
