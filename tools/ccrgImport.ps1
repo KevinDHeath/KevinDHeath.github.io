@@ -2,7 +2,7 @@
 $target = Split-Path -Path "$PSScriptRoot" -Parent
 $root = Split-Path -Path "$target" -Parent
 $source = "$root\NuGetPackages\tests\Unit\TestResults\[]\reports"
-$project = "codecoverage"
+$project = "code"
 if( !(Test-Path "$target\$project") ) { Write-Host "Target folder $target\$project does not exist." -ForegroundColor Red; Exit }
 
 function Copy_Reports {
