@@ -1,6 +1,7 @@
 ## https://git-scm.com/docs/gitignore/
 ## https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 .vscode
+mainsite/familytree/*.txt
 mainsite/reddwarf/scripts
 tools/*.txt
 
