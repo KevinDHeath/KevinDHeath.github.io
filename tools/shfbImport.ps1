@@ -6,7 +6,7 @@ if(!($project -eq 'nuget') -And !($project -eq 'shfb') -And !($project -eq 'scor
 
 $target = Split-Path -Path "$PSScriptRoot" -Parent # target is the location in this repo
 $root = Split-Path -Path "$target" -Parent # root contains all the repos
-if( ($project -eq 'nuget') -Or ($project -eq 'shfb')) { $repo = 'NuGetPackages' } else { $repo = 'Samples' }
+if( ($project -eq 'nuget') -Or ($project -eq 'shfb')) { $repo = 'NuGetPackages' } else { $repo = 'ScoreBoard' }
 $source = [string]::Format( "{0}\{1}\docs\bin\{2}", $root, $repo, $project ) # source is the shfb output
 if( !(Test-Path "$source") ) { Write-Host "Source folder $source does not exist." -ForegroundColor Red; return }
 if( !(Test-Path "$target\$project") ) { Write-Host "Target folder $target\$project does not exist." -ForegroundColor Red; return }
