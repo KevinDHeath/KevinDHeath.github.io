@@ -4,6 +4,7 @@
 mainsite/familytree/*.txt
 mainsite/reddwarf/scripts
 tools/*.txt
+tech/Test*.html
 
 # Bulma v1.0.0 (v0.9.3 used by shfb but v1.0.0 does work)
 css/bulma/v093
