@@ -39,7 +39,7 @@
             <nav id="showInPlay" class="my-1 px-2" role="navigation" title="For testing only">
               <a id="inPlay" class="button is-danger is-dark" onclick="toggleInPlay()">Show in hand</a>
             </nav>
-            <ul id="InThisArticleMenu" class="menu-list">
+            <ul id="InThisArticleMenu" class="menu-list" style="list-style-type: none; margin-left: .25em;">
               <li><a id="inHandLink" class="quickLink is-hidden">In hand</a></li>
               <li><a class="quickLink">Stash pile</a></li>
               <li><a id="scoreCardsLink" class="quickLink is-hidden">Score cards</a></li>
@@ -50,7 +50,7 @@
           <table class="table"><tr>
             <td class="game-card"><img class="image" src="..\..\..\media\HeatOn-SearchAndSeizure.png"></td>
             <td>
-              <span class="player-totals"><p>Game total: $0<br>Stash total: $60,000</p></span>
+              <span class="player-totals">Game total: $0<br>Stash total: $60,000</span>
               <div style="height: 110px; overflow: auto;">
                 <table style="height: 110px;" class="table"><tr>
                   <td><ul style="margin-left: 9px; margin-top: 0px;">
@@ -64,7 +64,7 @@
             </td>
           </tr></table>
           <div id="inHand" class="is-hidden">
-            <h2 class="quickLinkHeader"><span class="icon toggleSection"><i class="fa fa-angle-down"></i></span>In hand</h2>
+            <h3 class="quickLinkHeader"><span class="icon toggleSection"><i class="fa fa-angle-down"></i></span>In hand</h3>
             <table class="table"><tr>
               <td class="play-card"><img class="image" title="" src="..\..\..\media\HeatOff-Payfine.png" /></td>
               <td class="play-card"><img class="image" title="" src="..\..\..\media\Protection-LustConquersAll.png" /></td>
@@ -74,7 +74,7 @@
               <td class="play-card"><img class="image" title="" src="..\..\..\media\Nirvana-Stonehigh.png" /></td>
             </tr></table>
           </div>
-          <h2 class="quickLinkHeader"><span class="icon toggleSection"><i class="fa fa-angle-down"></i></span>Stash pile</h2>
+          <h3 class="quickLinkHeader"><span class="icon toggleSection"><i class="fa fa-angle-down"></i></span>Stash pile</h3>
           <table class="table"><tr>
              <td class="game-card"><img class="image" src="..\..\..\media\Peddle-Jamaica.png"></td>
              <td class="game-card"><img class="image" src="..\..\..\media\Peddle-Jamaica.png"></td>
@@ -82,7 +82,7 @@
              <td class="game-card"><img class="image" src="..\..\..\media\Peddle-Mexico.png"></td>
           </tr></table>
           <div id="scoreCards" class="is-hidden">
-            <h2 class="quickLinkHeader"><span class="icon toggleSection"><i class="fa fa-angle-down"></i></span>Score cards</h2>
+            <h3 class="quickLinkHeader"><span class="icon toggleSection"><i class="fa fa-angle-down"></i></span>Score cards</h3>
             <div class="column">
             </div>
           </div>
@@ -90,9 +90,9 @@
         <div class="column">
           <nav class="menu sticky">
             <p class="menu-label"><strong>Players</strong></p>
-            <ul class="toc-menu">
+            <ul class="toc-menu" style="list-style-type: none; margin-left: 0px;">
               <li><a href="Janis.html">Janis</a></li>
-              <li><a class="player-current" href="John.html">John</a></li>
+              <li class="player-current">John</li>
               <li><a href="Amy.html">Amy</a></li>
               <li><a href="Bob.html">Bob</a></li>
             </ul>
